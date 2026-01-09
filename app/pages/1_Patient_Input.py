@@ -1,13 +1,3 @@
-
-import sys
-from pathlib import Path
-
-APP_DIR = Path(__file__).resolve().parents[1]  # points to app/
-if str(APP_DIR) not in sys.path:
-    sys.path.insert(0, str(APP_DIR))
-
-
-
 from __future__ import annotations
 
 from io import BytesIO
@@ -19,6 +9,14 @@ import pandas as pd
 import streamlit as st
 
 from vero_engine import VEROEngine
+
+import sys
+from pathlib import Path
+
+APP_DIR = Path(__file__).resolve().parents[1]  # points to app/
+if str(APP_DIR) not in sys.path:
+    sys.path.insert(0, str(APP_DIR))
+
 
 
 # ----------------------------
