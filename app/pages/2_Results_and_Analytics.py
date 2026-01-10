@@ -15,28 +15,29 @@ import streamlit as st
 from vero_engine import VEROEngine
 from pdf_report import PDFInputs, build_vero_pdf
 
-import sys
-from pathlib import Path
 
-APP_DIR = Path(__file__).resolve().parents[1]  # points to app/
+# ----------------------------
+# Path bootstrap
+# ----------------------------
+APP_DIR = Path(__file__).resolve().parents[1]  # app/
 if str(APP_DIR) not in sys.path:
     sys.path.insert(0, str(APP_DIR))
+
 
 # ----------------------------
 # Safety
 # ----------------------------
-if sys.version_info >= (3, 12):
-    st.error("Run this app with Python 3.11 (your .venv).")
+if sys.version_info < (3, 10):
+    st.error("Please use Python 3.10+")
     st.stop()
 
-# FIXED: page_title keyword
 st.set_page_config(page_title="VERO - Results & Visual Analytics", layout="wide")
 
 
 # ----------------------------
 # Paths
 # ----------------------------
-HERE = Path(__file__).resolve().parent.parent
+HERE = Path(__file__).resolve().parent.parent  # app/
 BASE_MODEL = HERE / "vero_base_model_prefit.joblib"
 CALIBRATOR = HERE / "vero_calibrator_prefit.joblib"
 META = HERE / "vero_metadata.json"
@@ -48,6 +49,30 @@ META = HERE / "vero_metadata.json"
 @st.cache_resource
 def load_engine() -> VEROEngine:
     return VEROEngine(BASE_MODEL, CALIBRATOR, META)
+
+
+# ----------------------------
+# Timeline columns (ONLY these)
+# ----------------------------
+TIMELINE_COLS = [
+    "observation_start_date",
+    "observation_end_date",
+    "tumor_diagnosis_date",
+    "Oncology Unit Intake Date",
+    "surgery_date",
+    "radiotherapy_start_date",
+    "radiotherapy_end_date",
+]
+
+TIMELINE_LABELS = {
+    "observation_start_date": "Observation start",
+    "observation_end_date": "Observation end",
+    "tumor_diagnosis_date": "Tumor diagnosis",
+    "Oncology Unit Intake Date": "Oncology unit intake",
+    "surgery_date": "Surgery",
+    "radiotherapy_start_date": "Radiotherapy start",
+    "radiotherapy_end_date": "Radiotherapy end",
+}
 
 
 # ----------------------------
@@ -88,9 +113,11 @@ def risk_badge(stratum: str) -> str:
 
 
 def safe_to_date(x: Any) -> Optional[date]:
-    if x is None:
-        return None
-    if x is pd.NaT:
+    """
+    Convert values to python date safely.
+    - IMPORTANT: avoids turning non-date numeric fields into 1970-01-01
+    """
+    if x is None or x is pd.NaT:
         return None
     try:
         if pd.isna(x):
@@ -106,64 +133,22 @@ def safe_to_date(x: Any) -> Optional[date]:
     if isinstance(x, date):
         return x
 
-    try:
-        dt = pd.to_datetime(x, errors="coerce")
-        if pd.isna(dt):
-            return None
-        return dt.date()
-    except Exception:
+    # guard: prevent numeric-only values (cycles, status codes) from being coerced to epoch
+    if isinstance(x, (int, float, np.integer, np.floating)):
         return None
 
-def _norm_key(k: Any) -> str:
-    return str(k).strip().lower().replace(" ", "_")
+    s = str(x).strip()
+    if s == "":
+        return None
 
-def get_date_anywhere(
-    primary: Dict[str, Any],
-    fallback: Dict[str, Any],
-    *candidate_keys: str
-) -> Optional[date]:
-    """
-    Try multiple key variants across both dicts.
-    - Matches exact keys
-    - Also matches by normalized key (case/space insensitive)
-    """
-    if not isinstance(primary, dict):
-        primary = {}
-    if not isinstance(fallback, dict):
-        fallback = {}
+    # parse as datetime
+    dt = pd.to_datetime(s, errors="coerce")
+    if pd.isna(dt):
+        return None
+    return dt.date()
 
-    # 1) direct lookup first (fast)
-    for k in candidate_keys:
-        if k in primary:
-            d = safe_to_date(primary.get(k))
-            if d is not None:
-                return d
-        if k in fallback:
-            d = safe_to_date(fallback.get(k))
-            if d is not None:
-                return d
-
-    # 2) normalized lookup
-    primary_norm = {_norm_key(k): k for k in primary.keys()}
-    fallback_norm = {_norm_key(k): k for k in fallback.keys()}
-
-    for k in candidate_keys:
-        nk = _norm_key(k)
-        if nk in primary_norm:
-            d = safe_to_date(primary.get(primary_norm[nk]))
-            if d is not None:
-                return d
-        if nk in fallback_norm:
-            d = safe_to_date(fallback.get(fallback_norm[nk]))
-            if d is not None:
-                return d
-
-    return None
 
 def fmt_prob(p: float) -> str:
-    """
-    Avoid ugly "0.0000" displays.
-    """
     try:
         p = float(p)
     except Exception:
@@ -194,8 +179,9 @@ def make_membership_gauge(prob_display: float) -> go.Figure:
 
 def make_timeline_figure(events: List[Dict[str, Any]]) -> go.Figure:
     """
-    Timeline with staggered y positions to reduce label overlap.
-    Uses month-year ticks for readability.
+    Clean timeline:
+    - uses only the curated date columns
+    - distributes events across multiple y lanes (not just 0/1)
     """
     ev_df = pd.DataFrame(events).copy()
     ev_df = ev_df.dropna(subset=["date"]).sort_values("date")
@@ -203,7 +189,8 @@ def make_timeline_figure(events: List[Dict[str, Any]]) -> go.Figure:
     if ev_df.empty:
         return go.Figure()
 
-    y = [(i % 2) for i in range(len(ev_df))]
+    lanes = min(4, max(1, len(ev_df)))  # up to 4 lanes
+    y = [i % lanes for i in range(len(ev_df))]
 
     fig = go.Figure()
     fig.add_trace(
@@ -218,30 +205,47 @@ def make_timeline_figure(events: List[Dict[str, Any]]) -> go.Figure:
         )
     )
 
+    # base line across the full span
     fig.add_shape(
         type="line",
         x0=min(ev_df["date"]),
         x1=max(ev_df["date"]),
-        y0=0.5,
-        y1=0.5,
+        y0=(lanes - 1) / 2,
+        y1=(lanes - 1) / 2,
         line=dict(width=2),
     )
 
-    fig.update_yaxes(visible=False, range=[-0.6, 1.6])
-
-    fig.update_xaxes(
-        tickformat="%b %Y",
-        tickangle=-25,
-        showgrid=True,
-        title="Date",
-    )
-
-    fig.update_layout(
-        height=320,
-        margin=dict(l=20, r=20, t=30, b=20),
-        showlegend=False,
-    )
+    fig.update_yaxes(visible=False, range=[-0.8, lanes - 0.2])
+    fig.update_xaxes(tickformat="%b %Y", tickangle=-25, showgrid=True, title="Date")
+    fig.update_layout(height=320, margin=dict(l=20, r=20, t=30, b=20), showlegend=False)
     return fig
+
+
+def build_timeline_events(timeline_record: Dict[str, Any], patient_record: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """
+    STRICT timeline builder:
+    - only uses the exact columns you listed
+    - pulls from timeline_record first, then patient_record as fallback
+    - filters out non-dates, avoids 1970 artifacts
+    """
+    primary = timeline_record or {}
+    fallback = patient_record or {}
+
+    events: List[Dict[str, Any]] = []
+    for col in TIMELINE_COLS:
+        v = primary.get(col, None)
+        if v is None:
+            v = fallback.get(col, None)
+
+        d = safe_to_date(v)
+        if d is None:
+            continue
+
+        label = TIMELINE_LABELS.get(col, pretty_label(col))
+        events.append({"event": label, "date": d})
+
+    events.sort(key=lambda x: x["date"])
+    return events
 
 
 # ----------------------------
@@ -336,10 +340,6 @@ stratum = str(res.risk_stratum)
 
 p_used_disp = clip_for_display(p_used)
 
-
-# ----------------------------
-# Metrics (warning banner removed)
-# ----------------------------
 m1, m2, m3, m4 = st.columns(4)
 m1.metric("Probability used for score", fmt_prob(p_used))
 m2.metric("Calibrated probability", fmt_prob(p_cal))
@@ -368,47 +368,30 @@ with right:
 
 st.divider()
 
+
 # ----------------------------
-# Timeline 
+# Timeline (STRICT FIX)
 # ----------------------------
 st.subheader("Patient timeline")
 
 timeline_record = st.session_state.get("timeline_record", {}) or {}
 
-# IMPORTANT: also search patient record as a fallback
-timeline_source_primary = timeline_record
-timeline_source_fallback = patient  # patient_record
-
-timeline_fields = [
-    # label, candidate keys (we try many variants)
-    ("Observation start", ["observation_start_date", "Observation start date", "Observation Start Date"]),
-    ("Observation end", ["observation_end_date", "Observation end date", "Observation End Date"]),
-    ("Tumor diagnosis", ["tumor_diagnosis_date", "Tumor diagnosis date", "Diagnosis date", "diagnosis_date"]),
-    ("Oncology unit intake", ["Oncology Unit Intake Date", "oncology_unit_intake_date", "Oncology intake date"]),
-    ("Surgery", ["surgery_date", "Surgery date", "Surgery Date"]),
-    ("Radiotherapy start", ["radiotherapy_start_date", "Radiotherapy start date", "Radiotherapy Start Date"]),
-    ("Radiotherapy end", ["radiotherapy_end_date", "Radiotherapy end date", "Radiotherapy End Date"]),
-]
-
-events: List[Dict[str, Any]] = []
-for label, keys in timeline_fields:
-    d = get_date_anywhere(timeline_source_primary, timeline_source_fallback, *keys)
-    if d is not None:
-        events.append({"event": label, "date": d})
-
-events.sort(key=lambda x: x["date"])
+events = build_timeline_events(
+    timeline_record=timeline_record,
+    patient_record=patient,
+)
 
 timeline_fig = None
 if not events:
-    st.info("No usable timeline dates found (nothing could be parsed).")
-    # Optional debug (remove later if you want)
-    with st.expander("Debug: timeline keys detected", expanded=False):
-        st.write("timeline_record keys:", list(timeline_record.keys())[:80])
-        st.write("patient_record keys:", list(patient.keys())[:80])
+    st.info("No usable timeline dates found for this patient.")
+    with st.expander("Debug: timeline raw values (current patient)", expanded=False):
+        st.write({k: timeline_record.get(k, None) for k in TIMELINE_COLS})
 else:
     timeline_fig = make_timeline_figure(events)
     st.plotly_chart(timeline_fig, use_container_width=True)
     st.dataframe(pd.DataFrame(events), use_container_width=True, hide_index=True)
+
+st.divider()
 
 
 # ----------------------------
@@ -442,12 +425,14 @@ st.divider()
 st.subheader("Export")
 notes = st.text_area("Clinical notes (optional, for PDF)", value="", height=90)
 
+# IMPORTANT: Kaleido needed on Streamlit Cloud for Plotly -> PNG
+# Add "kaleido" to requirements.txt (recommended), not pip-install in runtime.
 try:
     contrib_png = pio.to_image(contrib_fig, format="png", scale=2)
     gauge_png = pio.to_image(gauge_fig, format="png", scale=2)
     timeline_png = pio.to_image(timeline_fig, format="png", scale=2) if timeline_fig is not None else b""
 except Exception:
-    st.error("Chart rendering for PDF failed. Install kaleido in your venv: pip install kaleido")
+    st.error("Chart rendering for PDF failed. Add kaleido to requirements.txt and redeploy.")
     contrib_png, gauge_png, timeline_png = b"", b"", b""
 
 fields_provided = int(sum(1 for k in FEATURE_COLS if patient.get(k) not in [None, ""]))

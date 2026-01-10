@@ -18,6 +18,17 @@ from vero_engine import VEROEngine
 LEAVE_BLANK_LABEL = "(leave blank)"
 MISSING_LABELS = {"Not Known / Missing", "Missing / Not Noted"}
 
+# Timeline columns (ONLY these, per your instruction)
+TIMELINE_COLS = [
+    "observation_start_date",
+    "observation_end_date",
+    "tumor_diagnosis_date",
+    "Oncology Unit Intake Date",
+    "surgery_date",
+    "radiotherapy_start_date",
+    "radiotherapy_end_date",
+]
+
 
 def _is_missing(v: Any) -> bool:
     if v is None:
@@ -29,7 +40,7 @@ def _is_missing(v: Any) -> bool:
 
 
 def _clean_scalar(v: Any) -> Any:
-    """Convert numpy scalars to python scalars; keep timestamps as-is (we stringify later for text_input)."""
+    """Convert numpy scalars to python scalars."""
     if isinstance(v, np.generic):
         return v.item()
     return v
@@ -163,14 +174,18 @@ CATEGORIES: Dict[str, List[str]] = {
 # Widget key strategy (important)
 # ----------------------------
 def wkey(col: str) -> str:
-    # Dedicated widget key so we can safely seed session_state
     return f"w__{col}"
 
 
-def seed_widgets_from_patient(base_patient: Dict[str, Any], feature_cols: List[str], numeric_cols: set, levels: Dict[str, List[str]]) -> None:
+def seed_widgets_from_patient(
+    base_patient: Dict[str, Any],
+    feature_cols: List[str],
+    numeric_cols: set,
+    levels: Dict[str, List[str]],
+) -> None:
     """
     Seed widget session_state keys exactly once when patient changes.
-    No widget should be created with value= or index= if we do this.
+    Widgets MUST NOT be created with value= or index= if we do this.
     """
     for col in feature_cols:
         if col == "age_group":
@@ -178,12 +193,12 @@ def seed_widgets_from_patient(base_patient: Dict[str, Any], feature_cols: List[s
 
         wk = wkey(col)
 
-        # Numeric widgets are text_input so store as text
+        # numeric -> text_input -> store as text
         if col in numeric_cols:
             st.session_state[wk] = _as_text(base_patient.get(col))
             continue
 
-        # Categorical widgets are selectbox so store as a valid option string
+        # categorical -> selectbox -> store valid option
         if col in levels and len(levels[col]) > 0:
             opts = [LEAVE_BLANK_LABEL] + levels[col]
             v = base_patient.get(col)
@@ -195,7 +210,7 @@ def seed_widgets_from_patient(base_patient: Dict[str, Any], feature_cols: List[s
                 st.session_state[wk] = s if s in opts else LEAVE_BLANK_LABEL
             continue
 
-        # Fallback text input
+        # fallback text
         st.session_state[wk] = _as_text(base_patient.get(col))
 
 
@@ -207,7 +222,6 @@ def input_widget(col: str, numeric_cols: set, levels: Dict[str, List[str]]) -> A
     label = pretty_label(col)
     wk = wkey(col)
 
-    # numeric text input
     if col in numeric_cols:
         raw = st.text_input(label, key=wk, placeholder="Leave blank if unknown")
         v = parse_numeric(raw)
@@ -215,13 +229,11 @@ def input_widget(col: str, numeric_cols: set, levels: Dict[str, List[str]]) -> A
             st.warning(f"{label} expects a number. Leave blank if unknown.")
         return v
 
-    # categorical selectbox
     if col in levels and len(levels[col]) > 0:
         opts = [LEAVE_BLANK_LABEL] + levels[col]
         pick = st.selectbox(label, options=opts, key=wk)
         return None if pick == LEAVE_BLANK_LABEL else pick
 
-    # fallback text
     raw = st.text_input(label, key=wk, placeholder="Type or leave blank if unknown")
     return None if raw.strip() == "" else raw.strip()
 
@@ -235,6 +247,21 @@ def build_patient_record_from_row(row: pd.Series, feature_cols: List[str]) -> Di
         else:
             rec[c] = None
     return rec
+
+
+def build_timeline_record_from_row(row: pd.Series) -> Dict[str, Any]:
+    """
+    Store ONLY the selected timeline columns (raw values).
+    Results page will parse/validate strictly.
+    """
+    out: Dict[str, Any] = {}
+    for c in TIMELINE_COLS:
+        if c in row.index:
+            v = row.get(c, None)
+            out[c] = None if _is_missing(v) else _clean_scalar(v)
+        else:
+            out[c] = None
+    return out
 
 
 # ----------------------------
@@ -262,6 +289,7 @@ engine = load_engine()
 FEATURE_COLS = engine.feature_cols
 NUM_COLS = set(engine.meta.get("numeric_cols", []))
 CAT_COLS = list(engine.meta.get("categorical_cols", []))
+
 
 # ----------------------------
 # Data source
@@ -299,6 +327,7 @@ levels = build_levels_from_df(df_master, CAT_COLS)
 
 st.divider()
 
+
 # ----------------------------
 # Patient selection and auto-fill
 # ----------------------------
@@ -325,16 +354,8 @@ if sel != "(none)":
     if "age_group" in FEATURE_COLS:
         base_patient["age_group"] = derive_age_group(base_patient.get("age"))
 
-    # timeline for reporting only
-    timeline_record = {
-        "Diagnosis date": row.get("tumor_diagnosis_date", None),
-        "Treatment start date": row.get("Oncology Unit Intake Date", row.get("observation_start_date", None)),
-        "Radiotherapy start date": row.get("radiotherapy_start_date", None),
-        "Chemo start date": None,
-        "Targeted therapy start date": None,
-        "Progression date": None,
-        "Last follow-up date": row.get("observation_end_date", None),
-    }
+    # FIX: timeline_record now stores ONLY your selected date columns (raw values)
+    timeline_record = build_timeline_record_from_row(row)
 
     # Seed widgets ONLY when patient changes
     prev = st.session_state.get("_active_patient_id", None)
@@ -344,12 +365,13 @@ if sel != "(none)":
 
     st.success(f"Loaded patient record for: {sel}")
 
-# keep consistent state for results page
+# Keep consistent state for results page
 st.session_state["selected_patient_id"] = None if sel == "(none)" else sel
 st.session_state["patient_record"] = dict(base_patient)
 st.session_state["timeline_record"] = dict(timeline_record)
 
 st.divider()
+
 
 # ----------------------------
 # Manual entry form (grouped)
@@ -363,7 +385,6 @@ with st.form("patient_form", clear_on_submit=False):
         unsafe_allow_html=True,
     )
 
-    # Render widgets and collect values from session_state
     updated: Dict[str, Any] = {}
 
     for category, cols in CATEGORIES.items():
@@ -390,6 +411,7 @@ with st.form("patient_form", clear_on_submit=False):
 if submit:
     merged = dict(base_patient)
 
+    # Save what user sees in the widgets now
     for col in FEATURE_COLS:
         if col == "age_group":
             continue
