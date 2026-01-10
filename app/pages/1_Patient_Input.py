@@ -5,49 +5,44 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 import sys
 
+import numpy as np
 import pandas as pd
 import streamlit as st
 
 from vero_engine import VEROEngine
 
-import sys
-from pathlib import Path
 
-APP_DIR = Path(__file__).resolve().parents[1]  # points to app/
-if str(APP_DIR) not in sys.path:
-    sys.path.insert(0, str(APP_DIR))
-
-
-
-# ----------------------------
-# Safety: ensure correct interpreter
-# ----------------------------
-if sys.version_info >= (3, 12):
-    st.error("Run this app with Python 3.11 (your .venv).")
-    st.stop()
-
-st.set_page_config(page_title="VERO - Patient Input", layout="wide")
-
-HERE = Path(__file__).resolve().parent.parent  # app/
-BASE_MODEL = HERE / "vero_base_model_prefit.joblib"
-CALIBRATOR = HERE / "vero_calibrator_prefit.joblib"
-META = HERE / "vero_metadata.json"
-DEFAULT_DATA_PATH = HERE / "data" / "codige_master_clean__v2.xlsx"
-
+# =============================================================================
+# Helpers: session-state auto fill
+# =============================================================================
 LEAVE_BLANK_LABEL = "(leave blank)"
 MISSING_LABELS = {"Not Known / Missing", "Missing / Not Noted"}
 
 
-@st.cache_resource
-def load_engine() -> VEROEngine:
-    return VEROEngine(BASE_MODEL, CALIBRATOR, META)
+def _clean_value(v: Any) -> Any:
+    """Convert NaN/NaT to empty string; keep normal python types."""
+    if v is None:
+        return ""
+    try:
+        if pd.isna(v):
+            return ""
+    except Exception:
+        pass
+    if isinstance(v, np.generic):
+        return v.item()
+    return v
 
 
-@st.cache_data
-def load_master_df_from_path(path: Path) -> pd.DataFrame:
-    df = pd.read_excel(path)
-    df.columns = [str(c).strip() for c in df.columns]
-    return df
+def apply_patient_to_session(row: pd.Series, feature_cols: List[str]) -> None:
+    """
+    Push patient row values into st.session_state using *feature column names* as keys.
+    Then rerun so widgets read the updated state.
+    """
+    for col in feature_cols:
+        st.session_state[col] = _clean_value(row.get(col, ""))
+
+    st.session_state["_active_patient_id"] = _clean_value(row.get("patient_id", ""))
+    st.rerun()
 
 
 def clean_levels(values: List[Any]) -> List[str]:
@@ -75,7 +70,7 @@ def build_levels_from_df(df: pd.DataFrame, cat_cols: List[str]) -> Dict[str, Lis
 
 
 def derive_age_group(age_value: Any) -> Optional[str]:
-    if age_value is None:
+    if age_value is None or age_value == "":
         return None
     try:
         a = float(age_value)
@@ -84,7 +79,116 @@ def derive_age_group(age_value: Any) -> Optional[str]:
     return "<= 65 years" if a <= 65 else "> 65 years"
 
 
-# Your exact categorization (drives layout)
+def pretty_label(code: str) -> str:
+    return str(code).replace("_", " ").strip().title()
+
+
+def parse_numeric(raw: str) -> Optional[float]:
+    raw = str(raw).strip()
+    if raw == "":
+        return None
+    try:
+        return float(raw) if "." in raw else int(raw)
+    except Exception:
+        return None
+
+
+def set_default_state_if_missing(col: str, default_value: Any) -> None:
+    """
+    Ensure st.session_state[col] exists before widget renders.
+    This is important because widgets pull from session_state once a key is set.
+    """
+    if col not in st.session_state:
+        st.session_state[col] = _clean_value(default_value)
+
+
+def input_widget(
+    col: str,
+    numeric_cols: set,
+    levels: Dict[str, List[str]],
+    default_value: Any,
+) -> Any:
+    """
+    Widget keys must be exactly `col` to allow session-state autofill.
+    """
+    label = pretty_label(col)
+    set_default_state_if_missing(col, default_value)
+
+    # numeric -> text_input (lets you leave blank)
+    if col in numeric_cols:
+        raw_default = st.session_state.get(col, "")
+        raw = st.text_input(
+            label,
+            key=col,
+            value="" if raw_default is None else str(raw_default),
+            placeholder="Leave blank if unknown",
+        )
+        v = parse_numeric(raw)
+        if str(raw).strip() != "" and v is None:
+            st.warning(f"{label} expects a number. Leave blank if unknown.")
+        return v
+
+    # categorical dropdown
+    if col in levels and len(levels[col]) > 0:
+        opts = [LEAVE_BLANK_LABEL] + levels[col]
+
+        current = st.session_state.get(col, "")
+        current = "" if current is None else str(current).strip()
+
+        if current == "":
+            idx = 0
+        else:
+            idx = opts.index(current) if current in opts else 0
+
+        pick = st.selectbox(label, options=opts, index=idx, key=col)
+        return None if pick == LEAVE_BLANK_LABEL else pick
+
+    # fallback free text
+    raw_default = st.session_state.get(col, "")
+    raw = st.text_input(
+        label,
+        key=col,
+        value="" if raw_default is None else str(raw_default),
+        placeholder="Type or leave blank if unknown",
+    )
+    return None if str(raw).strip() == "" else str(raw).strip()
+
+
+# =============================================================================
+# Paths / config
+# =============================================================================
+APP_DIR = Path(__file__).resolve().parents[1]  # app/
+if str(APP_DIR) not in sys.path:
+    sys.path.insert(0, str(APP_DIR))
+
+if sys.version_info < (3, 10):
+    st.error("Please use Python 3.10+")
+    st.stop()
+
+st.set_page_config(page_title="VERO - Patient Input", layout="wide")
+
+HERE = Path(__file__).resolve().parent.parent  # app/
+BASE_MODEL = HERE / "vero_base_model_prefit.joblib"
+CALIBRATOR = HERE / "vero_calibrator_prefit.joblib"
+META = HERE / "vero_metadata.json"
+DEFAULT_DATA_PATH = HERE / "data" / "codige_master_clean__v2.xlsx"
+
+
+@st.cache_resource
+def load_engine() -> VEROEngine:
+    return VEROEngine(BASE_MODEL, CALIBRATOR, META)
+
+
+@st.cache_data
+def load_master_df_from_path(path: Path) -> pd.DataFrame:
+    df = pd.read_excel(path)
+    df.columns = [str(c).strip() for c in df.columns]
+    return df
+
+
+# =============================================================================
+# Layout definitions
+# =============================================================================
 CATEGORIES: Dict[str, List[str]] = {
     "Demographics & Socio-economic": [
         "age", "gender", "ethnicity", "education_level",
@@ -119,71 +223,9 @@ CATEGORIES: Dict[str, List[str]] = {
 }
 
 
-def pretty_label(code: str) -> str:
-    return str(code).replace("_", " ").strip().title()
-
-
-def parse_numeric(raw: str) -> Optional[float]:
-    raw = raw.strip()
-    if raw == "":
-        return None
-    try:
-        return float(raw) if "." in raw else int(raw)
-    except Exception:
-        return None
-
-
-def input_widget(
-    col: str,
-    numeric_cols: set,
-    levels: Dict[str, List[str]],
-    default_value: Any,
-    key: str
-) -> Any:
-    label = pretty_label(col)
-
-    # numeric
-    if col in numeric_cols:
-        default_str = "" if default_value in [None, ""] else str(default_value)
-        raw = st.text_input(label, value=default_str, placeholder="Leave blank if unknown", key=key)
-        v = parse_numeric(raw)
-        if raw.strip() != "" and v is None:
-            st.warning(f"{label} expects a number. Leave blank if unknown.")
-        return v
-
-    # categorical dropdown
-    if col in levels and len(levels[col]) > 0:
-        opts = [LEAVE_BLANK_LABEL] + levels[col]
-        if default_value in [None, ""]:
-            idx = 0
-        else:
-            try:
-                idx = opts.index(str(default_value).strip())
-            except ValueError:
-                idx = 0
-        pick = st.selectbox(label, options=opts, index=idx, key=key)
-        return None if pick == LEAVE_BLANK_LABEL else pick
-
-    # fallback
-    default_str = "" if default_value in [None, ""] else str(default_value)
-    raw = st.text_input(label, value=default_str, placeholder="Type or leave blank if unknown", key=key)
-    return None if raw.strip() == "" else raw.strip()
-
-
-def build_patient_record_from_row(row: pd.Series, feature_cols: List[str]) -> Dict[str, Any]:
-    rec: Dict[str, Any] = {}
-    for c in feature_cols:
-        if c in row.index:
-            val = row[c]
-            rec[c] = None if pd.isna(val) else val
-        else:
-            rec[c] = None
-    return rec
-
-
-# ----------------------------
-# Aesthetics
-# ----------------------------
+# =============================================================================
+# Styling
+# =============================================================================
 st.markdown(
     """
 <style>
@@ -207,16 +249,16 @@ h1 {letter-spacing: 0.2px;}
 }
 .small-note {color: rgba(0,0,0,0.6); font-size: 0.9rem;}
 hr {margin: 1rem 0;}
-.stButton>button {
-  border-radius: 12px;
-  height: 44px;
-  font-weight: 700;
-}
+.stButton>button {border-radius: 12px; height: 44px; font-weight: 700;}
 </style>
 """,
     unsafe_allow_html=True
 )
 
+
+# =============================================================================
+# Main
+# =============================================================================
 st.title("Patient Input")
 
 engine = load_engine()
@@ -255,7 +297,6 @@ if "patient_id" not in df_master.columns:
     st.error("patient_id column not found in the master dataset.")
     st.stop()
 
-# Build dropdown levels from real data
 levels = build_levels_from_df(df_master, CAT_COLS)
 
 st.divider()
@@ -274,23 +315,28 @@ ids = (
 )
 ids = sorted(ids)
 
-sel = st.selectbox("patient_id", options=["(none)"] + ids, index=0)
+selected = st.selectbox(
+    "patient_id",
+    options=["(none)"] + ids,
+    index=0,
+    key="patient_id_select",
+)
 
-base_patient: Dict[str, Any] = {c: None for c in FEATURE_COLS}
+# Apply patient only when user changes selection
+if selected != "(none)":
+    active = st.session_state.get("_active_patient_id", None)
+    if active != selected:
+        row_df = df_master.loc[df_master["patient_id"].astype(str).str.strip() == selected]
+        if row_df.empty:
+            st.warning("Selected patient_id not found in master data.")
+        else:
+            st.success(f"Loaded patient record for: {selected}")
+            apply_patient_to_session(row_df.iloc[0], FEATURE_COLS)
+
+# timeline for reporting (store, even if none)
 timeline_record: Dict[str, Any] = {}
-
-if sel != "(none)":
-    st.session_state["selected_patient_id"] = sel
-
-    row = df_master.loc[df_master["patient_id"].astype(str).str.strip() == sel].iloc[0]
-    base_patient = build_patient_record_from_row(row, FEATURE_COLS)
-
-    # Fill model-required age_group silently
-    if "age_group" in FEATURE_COLS:
-        base_patient["age_group"] = derive_age_group(base_patient.get("age"))
-
-    # Store timeline (reporting only)
-    # These are the strongest available date columns in your file
+if selected != "(none)":
+    row = df_master.loc[df_master["patient_id"].astype(str).str.strip() == selected].iloc[0]
     timeline_record = {
         "Diagnosis date": row.get("tumor_diagnosis_date", None),
         "Treatment start date": row.get("Oncology Unit Intake Date", row.get("observation_start_date", None)),
@@ -301,10 +347,6 @@ if sel != "(none)":
         "Last follow-up date": row.get("observation_end_date", None),
     }
 
-    st.success(f"Loaded patient record for: {sel}")
-
-# Put base into session right away (so Results page always has something consistent)
-st.session_state["patient_record"] = dict(base_patient)
 st.session_state["timeline_record"] = dict(timeline_record)
 
 st.divider()
@@ -316,47 +358,50 @@ st.markdown('<div class="section-title">Inputs (grouped)</div>', unsafe_allow_ht
 st.caption("Leave any field blank if unknown. The model imputers handle missingness.")
 
 with st.form("patient_form", clear_on_submit=False):
-    st.markdown('<div class="small-note">Auto-filled values (if any) are already loaded into the fields below.</div>', unsafe_allow_html=True)
+    st.markdown(
+        '<div class="small-note">Auto-filled values (if any) are already loaded into the fields below.</div>',
+        unsafe_allow_html=True
+    )
 
-    updated: Dict[str, Any] = {}
-
+    # render widgets using keys == feature names
     for category, cols in CATEGORIES.items():
         st.markdown(f'<div class="card"><h3>{category}</h3>', unsafe_allow_html=True)
 
         c1, c2, c3 = st.columns([1, 1, 1], gap="large")
-
-        # 3-column grid for nicer density
-        col_buckets = [c1, c2, c3]
-        bucket_i = 0
+        buckets = [c1, c2, c3]
+        bi = 0
 
         for col in cols:
             if col not in FEATURE_COLS:
                 continue
             if col == "age_group":
-                continue  # never an input
+                continue
 
-            with col_buckets[bucket_i % 3]:
-                updated[col] = input_widget(
+            with buckets[bi % 3]:
+                _ = input_widget(
                     col=col,
                     numeric_cols=NUM_COLS,
                     levels=levels,
-                    default_value=base_patient.get(col),
-                    key=f"form__{col}",
+                    default_value=st.session_state.get(col, ""),
                 )
-            bucket_i += 1
+            bi += 1
 
         st.markdown("</div>", unsafe_allow_html=True)
 
     submit = st.form_submit_button("Save inputs for scoring", type="primary", use_container_width=True)
 
 if submit:
-    merged = dict(base_patient)
+    merged: Dict[str, Any] = {}
 
-    # Save exactly what user sees in the widgets now
-    for k, v in updated.items():
-        merged[k] = v
+    # Pull from session_state (these are the actual widget values)
+    for c in FEATURE_COLS:
+        if c == "age_group":
+            continue
+        merged[c] = st.session_state.get(c, None)
+        if merged[c] == "":
+            merged[c] = None
 
-    # Silent derived field for the model
+    # Derived field for model
     if "age_group" in FEATURE_COLS:
         merged["age_group"] = derive_age_group(merged.get("age"))
 
@@ -366,11 +411,12 @@ if submit:
 
     st.session_state["patient_record"] = merged
 
-    # Store a display bundle for results page
+    st.session_state["selected_patient_id"] = None if selected == "(none)" else selected
+
     st.session_state["display_demographics"] = {
         "patient_id": st.session_state.get("selected_patient_id", None),
         "age": merged.get("age"),
-        "age_group": derive_age_group(merged.get("age")),
+        "age_group": merged.get("age_group"),
         "gender": merged.get("gender"),
         "ethnicity": merged.get("ethnicity"),
         "education_level": merged.get("education_level"),
