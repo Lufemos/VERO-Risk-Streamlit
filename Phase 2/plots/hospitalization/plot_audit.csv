@@ -1,0 +1,44 @@
+variable,type,plotted,output
+gender,other/skip,False,
+ethnicity,other/skip,False,
+education_level,other/skip,False,
+bmi_category,other/skip,False,
+employment_status,other/skip,False,
+alcohol_consumption,other/skip,False,
+smoking_status_detail,other/skip,False,
+tumor_type,other/skip,False,
+molecular_alterations,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\molecular_alterations__event_rate.png
+mutations_present,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\mutations_present__event_rate.png
+genotipo_DPYD_type,other/skip,False,
+hypertension,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\hypertension__event_rate.png
+aortic_insufficiency,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\aortic_insufficiency__event_rate.png
+dyslipidemia,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\dyslipidemia__event_rate.png
+IPB,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\IPB__event_rate.png
+obesity_comorbidity,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\obesity_comorbidity__event_rate.png
+ischemic_heart_disease,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\ischemic_heart_disease__event_rate.png
+atrial_fibrillation,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\atrial_fibrillation__event_rate.png
+copd,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\copd__event_rate.png
+asthma,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\asthma__event_rate.png
+diabete_tipo_II,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\diabete_tipo_II__event_rate.png
+gastroesophageal_reflux_full,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\gastroesophageal_reflux_full__event_rate.png
+hypertensive_heart_disease,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\hypertensive_heart_disease__event_rate.png
+renal_insufficiency,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\renal_insufficiency__event_rate.png
+depressive_syndrome,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\depressive_syndrome__event_rate.png
+anemia_comorbidity,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\anemia_comorbidity__event_rate.png
+psychiatric_disorders,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\psychiatric_disorders__event_rate.png
+cardiovascular_disorders,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\cardiovascular_disorders__event_rate.png
+gastrointestinal_disorders,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\gastrointestinal_disorders__event_rate.png
+cerebrovascular_disorders,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\binary_predictors\cerebrovascular_disorders__event_rate.png
+white_blood_cells_range,other/skip,False,
+red_blood_cells_range,other/skip,False,
+hemoglobin_range,other/skip,False,
+neutrophils_percent_range,other/skip,False,
+platelet_count_range,other/skip,False,
+creatinine_range,other/skip,False,
+ast_got_range,other/skip,False,
+alt_gpt_range,other/skip,False,
+total_bilirubin_range,other/skip,False,
+direct_bilirubin_range,other/skip,False,
+farmaci_cat_n,continuous,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Hospitalization\continuous_predictors\farmaci_cat_n__boxplot.png
+cci_score,other/skip,False,
+valid_hospitalization_count,other/skip,False,

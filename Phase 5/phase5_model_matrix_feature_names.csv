@@ -1,0 +1,129 @@
+feature
+age
+genotipo_DPYD_type
+radiotherapy_status
+received_chemo
+received_targeted_therapy
+oncology_treatment_lines_n
+n_treatment_lines
+max_combo_regimen_size
+total_chemo_cycles
+treatment_duration_days
+hypertensive_heart_disease
+diabete_tipo_II
+gastroesophageal_reflux_full
+cci_score
+IPB
+farmaci_cat_n
+total_unique_active_drugs
+adr_n_tot
+age_group_<= 65 years
+age_group_> 65 years
+gender_Female
+gender_Male
+ethnicity_African or African American
+ethnicity_Caucasian
+ethnicity_Missing / Not Noted
+education_level_Elementary School
+education_level_High School
+education_level_Middle School
+education_level_Not Known / Missing
+education_level_University Degree
+employment_status_Homemaker
+employment_status_Not Known / Missing
+employment_status_Retired
+employment_status_Unemployed
+employment_status_Worker
+alcohol_consumption_Non-drinker
+alcohol_consumption_Not Known / Missing
+"alcohol_consumption_Yes, High"
+"alcohol_consumption_Yes, Moderate"
+smoking_status_detail_Current Smoker
+smoking_status_detail_Ex-Smoker
+smoking_status_detail_Never Smoked
+smoking_status_detail_Not Known / Missing
+tumor_type_K DIGIUNO- INTESTINO TENUE
+tumor_type_K retto con secondarismi polmonari
+tumor_type_k appendice
+tumor_type_k cieco
+tumor_type_k cieco - k colon DESTRO
+tumor_type_k colon
+tumor_type_k colon-retto
+tumor_type_k colon-retto metastatico
+tumor_type_k esofago
+tumor_type_k fegato
+tumor_type_k gastrico
+tumor_type_k mammella
+tumor_type_k pancreas
+tumor_type_k retto
+tumor_type_k vie biliari
+molecular_alterations_Absent / No
+molecular_alterations_Present / Yes
+mutations_present_Absent / No
+mutations_present_Present / Yes
+surgical_intervention_Absent / No
+surgical_intervention_Present / Yes
+hypertension_Absent / No
+hypertension_Present / Yes
+dyslipidemia_Absent / No
+dyslipidemia_Present / Yes
+ischemic_heart_disease_Absent / No
+ischemic_heart_disease_Present / Yes
+atrial_fibrillation_Absent / No
+atrial_fibrillation_Present / Yes
+obesity_comorbidity_Absent / No
+obesity_comorbidity_Present / Yes
+copd_Absent / No
+copd_Present / Yes
+asthma_Absent / No
+asthma_Present / Yes
+renal_insufficiency_Absent / No
+renal_insufficiency_Present / Yes
+anemia_comorbidity_Absent / No
+anemia_comorbidity_Present / Yes
+depressive_syndrome_Absent / No
+depressive_syndrome_Present / Yes
+psychiatric_disorders_Absent / No
+psychiatric_disorders_Present / Yes
+cerebrovascular_disorders_Absent / No
+cerebrovascular_disorders_Present / Yes
+gastrointestinal_disorders_Absent / No
+gastrointestinal_disorders_Present / Yes
+cardiovascular_disorders_Absent / No
+cardiovascular_disorders_Present / Yes
+white_blood_cells_range_High (>11000 cells/µL)
+white_blood_cells_range_Low (<4000 cells/µL)
+white_blood_cells_range_Normal (4000-11000 cells/µL)
+red_blood_cells_range_4.0-5.0 (Femmine)
+red_blood_cells_range_4.5-5.9 (Maschi)
+red_blood_cells_range_<4.0 (Femmine)
+red_blood_cells_range_<4.5 (Maschi)
+red_blood_cells_range_>5.0 (Femmine)
+red_blood_cells_range_>5.9 (Maschi)
+hemoglobin_range_12-16 (Femmine)
+hemoglobin_range_13-17 (Maschi)
+hemoglobin_range_<12 (Femmine)
+hemoglobin_range_<13 (Maschi)
+hemoglobin_range_>16 (Femmine)
+hemoglobin_range_>17 (Maschi)
+neutrophils_percent_range_High (>75%)
+neutrophils_percent_range_Low (<40%)
+neutrophils_percent_range_Normal (40-75%)
+platelet_count_range_High (>400k /µL)
+platelet_count_range_Low (<150k /µL)
+platelet_count_range_Normal (150k-400k /µL)
+creatinine_range_0.70-1.20 (Femmine)
+creatinine_range_0.70-1.40 (Maschi)
+creatinine_range_<0.70 (Femmine)
+creatinine_range_<0.70 (Maschi)
+creatinine_range_>1.20 (Femmine)
+creatinine_range_>1.40 (Maschi)
+ast_got_range_High (>=21 U/L)
+ast_got_range_Normal (<21 U/L)
+alt_gpt_range_High (>=21 U/L)
+alt_gpt_range_Normal (<21 U/L)
+total_bilirubin_range_0.2.-1.0
+total_bilirubin_range_>1.0
+total_bilirubin_range_Low (<0.2 mg/dL)
+direct_bilirubin_range_>=0.2
+direct_bilirubin_range_Normal (<0.2 mg/dL)

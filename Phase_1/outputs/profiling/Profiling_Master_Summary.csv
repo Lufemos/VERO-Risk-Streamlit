@@ -1,2 +1,0 @@
-rows,columns,overall_missing_cells,overall_missing_pct,numeric_flagged_cells_est,categorical_flagged_cells_est,date_flagged_cells_est,chemo_flagged_cells_est,total_flagged_cells_est,pct_unresolved_anomalies_est,acceptance_criterion_<1%
-719,174,71270,56.97,56,2769,1,299,3125,2.498,False

@@ -1,0 +1,407 @@
+patient_id,phenotype_true,vero_prob_calibrated,vero_index_0_100,risk_strata_initial
+1_AO San Pio,1,0.9,90,High
+1_AORN A. Cardarelli,1,0.9333333333333333,93,High
+1_AORN Monaldi – Cotugno - C.T.O.,1,0.8183333333333334,82,High
+1_AORN San Giuseppe Moscati,0,0.0125,1,Low
+1_AORN Sant’Anna e San Sebastiano,1,0.785,78,High
+1_AOU San Giovanni di Dio Ruggi di Aragona,1,0.785,78,High
+1_Ospedale del mare,0,0.0125,1,Low
+1_PO Andrea Tortora di Pagani,0,0.12067765567765569,12,Low
+1_PO S. Maria delle Grazie,0,0.0,0,Low
+1_PO San Luca di Vallo della Lucania,0,0.2711538461538462,27,Low
+10_AO San Pio,1,0.6154761904761904,62,Medium
+10_AORN A. Cardarelli,1,1.0,100,High
+10_AORN Monaldi – Cotugno - C.T.O.,1,0.616255576750422,62,Medium
+10_AORN San Giuseppe Moscati,1,0.8706202777533016,87,High
+10_AORN Sant’Anna e San Sebastiano,0,0.0125,1,Low
+10_AOU San Giovanni di Dio Ruggi di Aragona,0,0.022023809523809522,2,Low
+10_Ospedale del mare,0,0.052500000000000005,5,Low
+10_PO Andrea Tortora di Pagani,0,0.33901098901098903,34,Medium
+10_PO S. Maria delle Grazie,1,0.7933333333333333,79,High
+10_PO San Luca di Vallo della Lucania,0,0.0,0,Low
+11_AO San Pio,1,0.7726369215867854,77,High
+11_AORN A. Cardarelli,1,0.6869241283599876,69,Medium
+11_AORN Monaldi – Cotugno - C.T.O.,1,0.785,78,High
+11_AORN San Giuseppe Moscati,0,0.0,0,Low
+11_AORN Sant’Anna e San Sebastiano,0,0.04564986887067817,5,Low
+11_AOU San Giovanni di Dio Ruggi di Aragona,1,0.2905177012621035,29,Low
+11_Ospedale del mare,0,0.04067845310335298,4,Low
+11_PO Andrea Tortora di Pagani,1,0.891088592289613,89,High
+11_PO S. Maria delle Grazie,1,1.0,100,High
+11_PO San Luca di Vallo della Lucania,0,0.17567765567765567,18,Low
+12_AO San Pio,1,0.9545873867111796,95,High
+12_AORN Monaldi – Cotugno - C.T.O.,0,0.44666666666666666,45,Medium
+12_AORN San Giuseppe Moscati,0,0.009269692970353184,1,Low
+12_AORN Sant’Anna e San Sebastiano,1,0.694245649138055,69,Medium
+12_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0125,1,Low
+12_Ospedale del mare,0,0.05526677892686295,6,Low
+12_PO Andrea Tortora di Pagani,0,0.12452380952380952,12,Low
+12_PO S. Maria delle Grazie,0,0.0,0,Low
+12_PO San Luca di Vallo della Lucania,0,0.0,0,Low
+13_AO San Pio,0,0.13067765567765569,13,Low
+13_AORN A. Cardarelli,0,0.0,0,Low
+13_AORN Monaldi – Cotugno - C.T.O.,1,0.8766864969531717,88,High
+13_AORN San Giuseppe Moscati,0,0.11202380952380953,11,Low
+13_AORN Sant’Anna e San Sebastiano,0,0.17484432234432234,17,Low
+13_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0125,1,Low
+13_Ospedale del mare,0,0.0625,6,Low
+13_PO Andrea Tortora di Pagani,0,0.40714285714285714,41,Medium
+13_PO S. Maria delle Grazie,0,0.0125,1,Low
+13_PO San Luca di Vallo della Lucania,0,0.0,0,Low
+14_AO San Pio,0,0.2256776556776557,23,Low
+14_AORN Monaldi – Cotugno - C.T.O.,1,0.785,78,High
+14_AORN San Giuseppe Moscati,0,0.0125,1,Low
+14_AORN Sant’Anna e San Sebastiano,0,0.214010989010989,21,Low
+14_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0125,1,Low
+14_Ospedale del mare,1,0.37615384615384617,38,Medium
+14_PO Andrea Tortora di Pagani,1,0.2994871794871795,30,Low
+14_PO S. Maria delle Grazie,1,0.3801194206454195,38,Medium
+14_PO San Luca di Vallo della Lucania,0,0.022023809523809522,2,Low
+15_AO San Pio,1,0.4913410165844786,49,Medium
+15_AORN A. Cardarelli,1,0.4736675424029831,47,Medium
+15_AORN Monaldi – Cotugno - C.T.O.,0,0.3873424922085982,39,Medium
+15_AORN San Giuseppe Moscati,1,0.8645198447747395,86,High
+15_AORN Sant’Anna e San Sebastiano,1,0.4966666666666667,50,Medium
+15_AOU San Giovanni di Dio Ruggi di Aragona,0,0.022023809523809522,2,Low
+15_Ospedale del mare,0,0.13067765567765569,13,Low
+15_PO Andrea Tortora di Pagani,0,0.19734432234432236,20,Low
+15_PO S. Maria delle Grazie,0,0.0125,1,Low
+15_PO San Luca di Vallo della Lucania,0,0.15817765567765568,16,Low
+16_AO San Pio,0,0.18484432234432235,18,Low
+16_AORN A. Cardarelli,1,1.0,100,High
+16_AORN Monaldi – Cotugno - C.T.O.,0,0.34907236416442167,35,Medium
+16_AORN San Giuseppe Moscatii,0,0.0,0,Low
+16_AORN San Giuseppe Moscati,0,0.0,0,Low
+16_AOU San Giovanni di Dio Ruggi di Aragona,0,0.06817765567765569,7,Low
+16_Ospedale del mare,0,0.12671277440377118,13,Low
+16_PO Andrea Tortora di Pagani,0,0.19734432234432236,20,Low
+16_PO S. Maria delle Grazie,0,0.034523809523809526,3,Low
+16_PO San Luca di Vallo della Lucania,0,0.14734432234432235,15,Low
+17_AO San Pio,1,0.4404761904761905,44,Medium
+17_AORN A. Cardarelli,1,1.0,100,High
+17_AORN Monaldi – Cotugno - C.T.O.,0,0.873850418504342,87,High
+17_AORN San Giuseppe Moscati,0,0.0,0,Low
+17_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0125,1,Low
+17_Ospedale del mare,0,0.0,0,Low
+17_PO Andrea Tortora di Pagani,0,0.08452380952380953,8,Low
+17_PO S. Maria delle Grazie,1,1.0,100,High
+17_PO San Luca di Vallo della Lucania,1,0.2878205128205128,29,Low
+18_AO San Pio,0,0.12452380952380952,12,Low
+18_AORN A. Cardarelli,1,0.5394871794871794,54,Medium
+18_AORN Monaldi – Cotugno - C.T.O.,1,0.6711962860218331,67,Medium
+18_AORN San Giuseppe Moscati,0,0.0,0,Low
+18_AOU San Giovanni di Dio Ruggi di Aragona,0,0.24039621632730618,24,Low
+18_Ospedale del mare,0,0.0125,1,Low
+18_PO Andrea Tortora di Pagani,0,0.2711538461538462,27,Low
+18_PO S. Maria delle Grazie,0,0.022023809523809522,2,Low
+18_PO San Luca di Vallo della Lucania,0,0.009169313864248654,1,Low
+19_AO San Pio,0,0.06605266565205464,7,Low
+19_AORN A. Cardarelli,1,0.8692671555434502,87,High
+19_AORN Monaldi – Cotugno - C.T.O.,0,0.3272861457192153,33,Medium
+19_AORN San Giuseppe Moscati,1,0.9529420850715965,95,High
+19_AOU San Giovanni di Dio Ruggi di Aragona,0,0.025,2,Low
+19_Ospedale del mare,0,0.269010989010989,27,Low
+19_PO Andrea Tortora di Pagani,0,0.051307172164414015,5,Low
+19_PO S. Maria delle Grazie,0,0.3261538461538461,33,Medium
+19_PO San Luca di Vallo della Lucania,0,0.022023809523809522,2,Low
+2_AO San Pio,1,0.9786819279791874,98,High
+2_AORN A. Cardarelli,0,0.2649405639153338,26,Low
+2_AORN Monaldi – Cotugno - C.T.O.,1,0.7989270292320952,80,High
+2_AORN San Giuseppe Moscatii,0,0.0125,1,Low
+2_AORN San Giuseppe Moscati,0,0.0125,1,Low
+2_AORN Sant’Anna e San Sebastiano,1,0.4488095238095238,45,Medium
+2_AOU San Giovanni di Dio Ruggi di Aragona,0,0.2306776556776557,23,Low
+2_Ospedale del mare,0,0.06202380952380952,6,Low
+2_PO Andrea Tortora di Pagani,0,0.3210094883408871,32,Medium
+2_PO S. Maria delle Grazie,1,0.8231303286737065,82,High
+2_PO San Luca di Vallo della Lucania,0,0.2756776556776557,28,Low
+20_AO San Pio,0,0.3261538461538461,33,Medium
+20_AORN A. Cardarelli,1,1.0,100,High
+20_AORN Monaldi – Cotugno - C.T.O.,1,0.725,72,High
+20_AORN San Giuseppe Moscati,0,0.2278205128205128,23,Low
+20_AOU San Giovanni di Dio Ruggi di Aragona,0,0.022023809523809522,2,Low
+20_Ospedale del mare,0,0.022023809523809522,2,Low
+20_PO Andrea Tortora di Pagani,1,0.7504761904761904,75,High
+20_PO San Luca di Vallo della Lucania,0,0.2572815218512849,26,Low
+21_AORN A. Cardarelli,1,1.0,100,High
+21_AORN Monaldi – Cotugno - C.T.O.,0,0.0125,1,Low
+21_AORN San Giuseppe Moscati,0,0.0,0,Low
+21_AOU San Giovanni di Dio Ruggi di Aragona,0,0.3961538461538462,40,Medium
+21_Ospedale del mare,0,0.0,0,Low
+21_PO Andrea Tortora di Pagani,0,0.32830400991877634,33,Medium
+21_PO S. Maria delle Grazie,0,0.08452380952380953,8,Low
+21_PO San Luca di Vallo della Lucania,0,0.07202380952380952,7,Low
+22_AORN A. Cardarelli,1,0.41842720893332225,42,Medium
+22_AORN Monaldi – Cotugno - C.T.O.,0,0.1706776556776557,17,Low
+22_AORN San Giuseppe Moscati,0,0.0125,1,Low
+22_AOU San Giovanni di Dio Ruggi di Aragona,1,0.48936834668494533,49,Medium
+22_Ospedale del mare,1,0.3871428571428572,39,Medium
+22_PO S. Maria delle Grazie,0,0.0125,1,Low
+22_PO San Luca di Vallo della Lucania,0,0.16915462501483286,17,Low
+23_AORN A. Cardarelli,1,0.9333333333333333,93,High
+23_AORN Monaldi – Cotugno - C.T.O.,0,0.0125,1,Low
+23_AORN San Giuseppe Moscati,0,0.0125,1,Low
+23_AOU San Giovanni di Dio Ruggi di Aragona,0,0.3528205128205128,35,Medium
+23_Ospedale del mare,0,0.13067765567765569,13,Low
+23_PO Andrea Tortora di Pagani,0,0.0,0,Low
+23_PO S. Maria delle Grazie,1,0.785,78,High
+23_PO San Luca di Vallo della Lucania,0,0.20136863365897084,20,Low
+24_AORN A. Cardarelli,1,1.0,100,High
+24_AORN Monaldi – Cotugno - C.T.O.,0,0.15997576228324784,16,Low
+24_AORN San Giuseppe Moscati,1,0.8600000000000001,86,High
+24_AOU San Giovanni di Dio Ruggi di Aragona,0,0.3961538461538462,40,Medium
+24_Ospedale del mare,0,0.15575683599390316,16,Low
+24_PO Andrea Tortora di Pagani,1,0.9990071574040267,100,High
+24_PO S. Maria delle Grazie,0,0.3538095238095238,35,Medium
+24_PO San Luca di Vallo della Lucania,0,0.0,0,Low
+25_AORN A. Cardarelli,1,0.9503833381782121,95,High
+25_AORN Monaldi – Cotugno - C.T.O.,0,0.1706776556776557,17,Low
+25_AORN San Giuseppe Moscati,0,0.05218959024416666,5,Low
+25_AOU San Giovanni di Dio Ruggi di Aragonaa,0,0.07452380952380952,7,Low
+25_AOU San Giovanni di Dio Ruggi di Aragona,0,0.07452380952380952,7,Low
+25_Ospedale del mare,1,0.34282051282051285,34,Medium
+25_PO Andrea Tortora di Pagani,0,0.18567765567765568,19,Low
+25_PO S. Maria delle Grazie,0,0.022023809523809522,2,Low
+25_PO San Luca di Vallo della Lucania,0,0.3538095238095238,35,Medium
+26_AORN A. Cardarelli,1,1.0,100,High
+26_AORN Monaldi – Cotugno - C.T.O.,0,0.0125,1,Low
+26_AORN San Giuseppe Moscati,0,0.0,0,Low
+26_AOU San Giovanni di Dio Ruggi di Aragona,1,1.0,100,High
+26_Ospedale del mare,0,0.0125,1,Low
+26_PO Andrea Tortora di Pagani,0,0.34282051282051285,34,Medium
+26_PO S. Maria delle Grazie,0,0.0125,1,Low
+26_PO San Luca di Vallo della Lucania,0,0.022023809523809522,2,Low
+27_AORN A. Cardarelli,0,0.0125,1,Low
+27_AORN San Giuseppe Moscati,0,0.06202380952380952,6,Low
+27_AOU San Giovanni di Dio Ruggi di Aragona,0,0.41249297913260524,41,Medium
+27_Ospedale del mare,0,0.214010989010989,21,Low
+27_PO Andrea Tortora di Pagani,1,0.9426074893829876,94,High
+27_PO S. Maria delle Grazie,1,0.96,96,High
+27_PO San Luca di Vallo della Lucania,0,0.0,0,Low
+28_AORN A. Cardarelli,1,0.8266666666666665,83,High
+28_AORN San Giuseppe Moscati,1,0.3871428571428572,39,Medium
+28_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0,0,Low
+28_Ospedale del mare,0,0.20151098901098902,20,Low
+28_PO Andrea Tortora di Pagani,0,0.11879567358608636,12,Low
+28_PO S. Maria delle Grazie,1,0.4404761904761905,44,Medium
+28_PO San Luca di Vallo della Lucania,0,0.25448717948717947,25,Low
+29_AORN A. Cardarelli,1,1.0,100,High
+29_AORN San Giuseppe Moscati,1,0.3986325991360907,40,Medium
+29_AOU San Giovanni di Dio Ruggi di Aragona,0,0.022023809523809522,2,Low
+29_Ospedale del mare,0,0.0125,1,Low
+29_PO Andrea Tortora di Pagani,0,0.034523809523809526,3,Low
+29_PO S. Maria delle Grazie,0,0.0074432119798326455,1,Low
+29_PO San Luca di Vallo della Lucania,0,0.017559794478345513,2,Low
+3_AO San Pio,0,0.0,0,Low
+3_AORN A. Cardarelli,0,0.2586538461538462,26,Low
+3_AORN Monaldi – Cotugno - C.T.O.,0,0.1706776556776557,17,Low
+3_AORN San Giuseppe Moscati,0,0.2278205128205128,23,Low
+3_AORN Sant’Anna e San Sebastiano,1,0.785,78,High
+3_AOU San Giovanni di Dio Ruggi di Aragona,0,0.3211538461538462,32,Medium
+3_Ospedale del mare,1,0.7986939208874477,80,High
+3_PO Andrea Tortora di Pagani,0,0.022023809523809522,2,Low
+3_PO S. Maria delle Grazie,1,0.34282051282051285,34,Medium
+3_PO San Luca di Vallo della Lucania,0,0.1706776556776557,17,Low
+30_AORN A. Cardarelli,1,1.0,100,High
+30_AORN San Giuseppe Moscati,1,0.35948717948717945,36,Medium
+30_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0,0,Low
+30_Ospedale del mare,0,0.0125,1,Low
+30_PO Andrea Tortora di Pagani,0,0.0125,1,Low
+30_PO S. Maria delle Grazie,0,0.12067765567765569,12,Low
+30_PO San Luca di Vallo della Lucania,0,0.0125,1,Low
+31_AORN A. Cardarelli,0,0.05691624526582959,6,Low
+31_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0,0,Low
+31_Ospedale del mare,0,0.18734432234432236,19,Low
+31_PO Andrea Tortora di Pagani,0,0.28214285714285714,28,Low
+31_PO S. Maria delle Grazie,0,0.0125,1,Low
+31_PO San Luca di Vallo della Lucania,0,0.003974099857582387,0,Low
+32_AORN A. Cardarelli,1,0.8982830118111746,90,High
+32_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0125,1,Low
+32_Ospedale del mare,0,0.07452380952380952,7,Low
+32_PO Andrea Tortora di Pagani,1,0.8933333333333333,89,High
+32_PO S. Maria delle Grazie,0,0.034523809523809526,3,Low
+32_PO San Luca di Vallo della Lucania,0,0.0125,1,Low
+33_AORN A. Cardarelli,0,0.22952380952380952,23,Low
+33_AOU San Giovanni di Dio Ruggi di Aragona,0,0.034523809523809526,3,Low
+33_Ospedale del mare,1,0.8666666666666666,87,High
+33_PO Andrea Tortora di Pagani,1,0.9305526415603435,93,High
+33_PO S. Maria delle Grazie,0,0.0125,1,Low
+33_PO San Luca di Vallo della Lucania,0,0.27532051282051284,28,Low
+34_AORN A. Cardarelli,1,0.9333333333333333,93,High
+34_AOU San Giovanni di Dio Ruggi di Aragona,0,0.012638648057693722,1,Low
+34_Ospedale del mare,0,0.18734432234432236,19,Low
+34_PO Andrea Tortora di Pagani,1,1.0,100,High
+34_PO S. Maria delle Grazie,0,0.12067765567765569,12,Low
+34_PO San Luca di Vallo della Lucania,1,0.3941393173861647,39,Medium
+35_AORN A. Cardarelli,0,0.4361538461538462,44,Medium
+35_AOU San Giovanni di Dio Ruggi di Aragona,1,1.0,100,High
+35_Ospedale del mare,1,0.4404761904761905,44,Medium
+35_PO Andrea Tortora di Pagani,1,0.9333333333333333,93,High
+35_PO S. Maria delle Grazie,0,0.15268468499258167,15,Low
+35_PO San Luca di Vallo della Lucania,0,0.21532051282051282,22,Low
+36_AORN A. Cardarelli,1,0.6088095238095239,61,Medium
+36_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0,0,Low
+36_Ospedale del mare,1,0.7266666666666667,73,High
+36_PO S. Maria delle Grazie,0,0.2278205128205128,23,Low
+36_PO San Luca di Vallo della Lucania,1,0.3841981444414463,38,Medium
+37_AORN A. Cardarelli,1,0.4404761904761905,44,Medium
+37_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0125,1,Low
+37_PO S. Maria delle Grazie,0,0.18484432234432235,18,Low
+37_PO San Luca di Vallo della Lucania,1,0.3211538461538462,32,Medium
+38_AORN A. Cardarelli,1,0.4128205128205128,41,Medium
+38_AOU San Giovanni di Dio Ruggi di Aragona,0,0.5644792116202137,56,Medium
+38_PO S. Maria delle Grazie,0,0.034523809523809526,3,Low
+39_AOU San Giovanni di Dio Ruggi di Aragona,1,0.8,80,High
+39_PO S. Maria delle Grazie,0,0.0125,1,Low
+4_AO San Pio,1,0.2994871794871795,30,Low
+4_AORN A. Cardarelli,0,0.22067765567765568,22,Low
+4_AORN Monaldi – Cotugno - C.T.O.,0,0.0,0,Low
+4_AORN San Giuseppe Moscati,0,0.17567765567765567,18,Low
+4_AORN Sant’Anna e San Sebastiano,0,0.08340276996464199,8,Low
+4_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0,0,Low
+4_Ospedale del mare,1,0.5311538461538461,53,Medium
+4_PO Andrea Tortora di Pagani,0,0.11202380952380953,11,Low
+4_PO S. Maria delle Grazie,0,0.0,0,Low
+4_PO San Luca di Vallo della Lucania,0,0.214010989010989,21,Low
+40_AORN A. Cardarelli,1,0.4150133411823475,42,Medium
+40_AOU San Giovanni di Dio Ruggi di Aragona,0,0.052500000000000005,5,Low
+40_PO S. Maria delle Grazie,0,0.034523809523809526,3,Low
+41_AORN A. Cardarelli,0,0.0125,1,Low
+41_AOU San Giovanni di Dio Ruggi di Aragona,0,0.022023809523809522,2,Low
+41_PO S. Maria delle Grazie,0,0.0,0,Low
+42_AORN A. Cardarelli,1,0.9333333333333333,93,High
+42_AOU San Giovanni di Dio Ruggi di Aragona,0,0.2278205128205128,23,Low
+42_PO S. Maria delle Grazie,0,0.1753205128205128,18,Low
+43_AORN A. Cardarelli,1,0.9333333333333333,93,High
+43_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0,0,Low
+43_PO S. Maria delle Grazie,1,0.37772735496778703,38,Medium
+44_AORN A. Cardarelli,1,0.8095472980795562,81,High
+44_AOU San Giovanni di Dio Ruggi di Aragona,0,0.022023809523809522,2,Low
+44_PO S. Maria delle Grazie,0,0.0,0,Low
+45_AORN A. Cardarelli,1,1.0,100,High
+45_AOU San Giovanni di Dio Ruggi di Aragona,0,0.025168630548176234,3,Low
+45_PO S. Maria delle Grazie,1,0.3538095238095238,35,Medium
+46_AORN A. Cardarelli,1,0.785,78,High
+46_PO S. Maria delle Grazie,1,0.5713290159949518,57,Medium
+47_AORN A. Cardarelli,1,0.47988473227816125,48,Medium
+47_AOU San Giovanni di Dio Ruggi di Aragona,0,0.12275354428476426,12,Low
+47_PO S. Maria delle Grazie,0,0.0125,1,Low
+48_AORN A. Cardarelli,0,0.17484432234432234,17,Low
+48_AOU San Giovanni di Dio Ruggi di Aragona,0,0.14448466148149186,14,Low
+48_PO S. Maria delle Grazie,1,0.37948717948717947,38,Medium
+49_AORN A. Cardarelli,1,0.6221428571428571,62,Medium
+49_AOU San Giovanni di Dio Ruggi di Aragona,0,0.3014998873274111,30,Low
+49_PO S. Maria delle Grazie,0,0.32952356532324834,33,Medium
+5_AO San Pio,1,0.5,50,Medium
+5_AORN A. Cardarelli,0,0.27115384615384613,27,Low
+5_AORN Monaldi – Cotugno - C.T.O.,0,0.12452380952380952,12,Low
+5_AORN San Giuseppe Moscati,0,0.0125,1,Low
+5_AORN Sant’Anna e San Sebastiano,0,0.0125,1,Low
+5_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0125,1,Low
+5_Ospedale del mare,0,0.11202380952380953,11,Low
+5_PO Andrea Tortora di Pagani,1,0.916707222486828,92,High
+5_PO S. Maria delle Grazie,1,0.8628212361313514,86,High
+5_PO San Luca di Vallo della Lucania,0,0.022023809523809522,2,Low
+50_AORN A. Cardarelli,0,0.36924244741036805,37,Medium
+50_PO S. Maria delle Grazie,0,0.0,0,Low
+51_AORN A. Cardarelli,1,0.9566481318267126,96,High
+51_AOU San Giovanni di Dio Ruggi di Aragona,0,0.06817765567765569,7,Low
+51_PO S. Maria delle Grazie,0,0.1638305984119844,16,Low
+52_AORN A. Cardarelli,1,1.0,100,High
+52_PO S. Maria delle Grazie,0,0.0125,1,Low
+53_AORN A. Cardarelli,0,0.42948717948717946,43,Medium
+53_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0,0,Low
+53_PO S. Maria delle Grazie,0,0.1307117842642568,13,Low
+54_AORN A. Cardarelli,1,1.0,100,High
+54_PO S. Maria delle Grazie,0,0.3261538461538461,33,Medium
+55_AORN A. Cardarelli,1,0.9333333333333333,93,High
+55_AOU San Giovanni di Dio Ruggi di Aragona,1,1.0,100,High
+55_PO S. Maria delle Grazie,0,0.1706776556776557,17,Low
+56_AORN A. Cardarelli,1,0.6933333333333332,69,Medium
+56_AOU San Giovanni di Dio Ruggi di Aragona,1,0.6916666666666667,69,Medium
+56_PO S. Maria delle Grazie,0,0.0,0,Low
+57_AORN A. Cardarelli,1,0.9333333333333333,93,High
+57_AOU San Giovanni di Dio Ruggi di Aragona,0,0.3261538461538461,33,Medium
+57_PO S. Maria delle Grazie,0,0.29380952380952385,29,Low
+58_AORN A. Cardarelli,1,0.9,90,High
+58_AOU San Giovanni di Dio Ruggi di Aragona,0,0.2828205128205128,28,Low
+58_PO S. Maria delle Grazie,0,0.0,0,Low
+59_AORN A. Cardarelli,1,0.4978205128205128,50,Medium
+59_PO S. Maria delle Grazie,1,0.8333333333333334,83,High
+6_AO San Pio,0,0.3844871794871795,38,Medium
+6_AORN A. Cardarelli,0,0.2711538461538462,27,Low
+6_AORN Monaldi – Cotugno - C.T.O.,0,0.24345714787331746,24,Low
+6_AORN San Giuseppe Moscati,0,0.0125,1,Low
+6_AORN Sant’Anna e San Sebastiano,1,0.4361199870955006,44,Medium
+6_AOU San Giovanni di Dio Ruggi di Aragona,0,0.034523809523809526,3,Low
+6_Ospedale del mare,1,0.28567765567765574,29,Low
+6_PO Andrea Tortora di Pagani,0,0.25567765567765566,26,Low
+6_PO San Luca di Vallo della Lucania,0,0.18734432234432236,19,Low
+60_AORN A. Cardarelli,1,0.4966666666666667,50,Medium
+60_AOU San Giovanni di Dio Ruggi di Aragona,1,0.9333333333333333,93,High
+60_PO S. Maria delle Grazie,0,0.0125,1,Low
+61_AOU San Giovanni di Dio Ruggi di Aragona,1,0.65,65,Medium
+61_PO S. Maria delle Grazie,0,0.3961538461538462,40,Medium
+62_AORN A. Cardarelli,1,0.90350462676177,90,High
+62_PO S. Maria delle Grazie,0,0.08067765567765568,8,Low
+63_AORN A. Cardarelli,0,0.5004761904761905,50,Medium
+63_PO S. Maria delle Grazie,0,0.12067765567765569,12,Low
+64_AORN A. Cardarelli,1,0.4966666666666667,50,Medium
+64_AOU San Giovanni di Dio Ruggi di Aragona,0,0.015273578332088283,2,Low
+64_PO S. Maria delle Grazie,0,0.2828205128205128,28,Low
+65_AORN A. Cardarelli,1,0.9405292745513989,94,High
+65_AOU San Giovanni di Dio Ruggi di Aragona,0,0.1386904761904762,14,Low
+65_PO S. Maria delle Grazie,0,0.2278205128205128,23,Low
+66_AORN A. Cardarelli,0,0.55,55,Medium
+66_AOU San Giovanni di Dio Ruggi di Aragona,0,0.214010989010989,21,Low
+66_PO S. Maria delle Grazie,0,0.022023809523809522,2,Low
+67_PO S. Maria delle Grazie,0,0.13782051282051283,14,Low
+68_AORN A. Cardarelli,1,1.0,100,High
+68_PO S. Maria delle Grazie,1,1.0,100,High
+69_AORN A. Cardarelli,0,0.4966666666666667,50,Medium
+69_PO S. Maria delle Grazie,0,0.0125,1,Low
+7_AO San Pio,0,0.4194871794871795,42,Medium
+7_AORN A. Cardarelli,1,0.27532051282051284,28,Low
+7_AORN Monaldi – Cotugno - C.T.O.,0,0.0125,1,Low
+7_AORN San Giuseppe Moscati,0,0.40714285714285714,41,Medium
+7_AORN Sant’Anna e San Sebastiano,0,0.2956776556776557,30,Low
+7_AOU San Giovanni di Dio Ruggi di Aragona,1,0.8506625938421859,85,High
+7_Ospedale del mare,0,0.022023809523809522,2,Low
+7_PO Andrea Tortora di Pagani,0,0.2256776556776557,23,Low
+7_PO S. Maria delle Grazie,0,0.13067765567765569,13,Low
+7_PO San Luca di Vallo della Lucania,0,0.0,0,Low
+70_AORN A. Cardarelli,0,0.37615384615384617,38,Medium
+70_PO S. Maria delle Grazie,0,0.07452380952380952,7,Low
+71_AORN A. Cardarelli,0,0.0125,1,Low
+72_AORN A. Cardarelli,1,0.9333333333333333,93,High
+73_AORN A. Cardarelli,0,0.0125,1,Low
+74_AORN A. Cardarelli,0,0.1748579219927951,17,Low
+75_AORN A. Cardarelli,0,0.269010989010989,27,Low
+76_AORN A. Cardarelli,1,0.8600000000000001,86,High
+77_AORN A. Cardarelli,0,0.36782051282051287,37,Medium
+78_AORN A. Cardarelli,1,1.0,100,High
+79_AORN A. Cardarelli,0,0.3378205128205128,34,Medium
+8_AO San Pio,0,0.025,2,Low
+8_AORN A. Cardarelli,1,1.0,100,High
+8_AORN Monaldi – Cotugno - C.T.O.,0,0.19734432234432236,20,Low
+8_AORN San Giuseppe Moscati,0,0.022023809523809522,2,Low
+8_AORN Sant’Anna e San Sebastiano,0,0.0,0,Low
+8_AOU San Giovanni di Dio Ruggi di Aragona,0,0.12952380952380954,13,Low
+8_Ospedale del mare,1,0.725,72,High
+8_PO Andrea Tortora di Pagani,0,0.22895702457391134,23,Low
+8_PO S. Maria delle Grazie,1,0.8552104912280166,86,High
+8_PO San Luca di Vallo della Lucania,0,0.15817765567765568,16,Low
+80_AORN A. Cardarelli,0,0.0125,1,Low
+81_AORN A. Cardarelli,0,0.022023809523809522,2,Low
+82_AORN A. Cardarelli,0,0.0125,1,Low
+83_AORN A. Cardarelli,0,0.06202380952380952,6,Low
+84_AORN A. Cardarelli,0,0.06202380952380952,6,Low
+9_AO San Pio,0,0.40714285714285714,41,Medium
+9_AORN Monaldi – Cotugno - C.T.O.,1,0.9046151216640419,90,High
+9_AORN San Giuseppe Moscati,0,0.07202380952380952,7,Low
+9_AORN Sant’Anna e San Sebastiano,0,0.3871428571428572,39,Medium
+9_AOU San Giovanni di Dio Ruggi di Aragona,0,0.0,0,Low
+9_Ospedale del mare,0,0.4244373920377556,42,Medium
+9_PO Andrea Tortora di Pagani,1,0.8418928356499252,84,High
+9_PO S. Maria delle Grazie,1,1.0,100,High
+9_PO San Luca di Vallo della Lucania,0,0.0,0,Low

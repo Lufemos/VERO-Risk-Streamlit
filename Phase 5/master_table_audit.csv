@@ -1,0 +1,138 @@
+variable,dtype,missing_pct,n_unique,top_level,top_level_pct
+birth_date,object,0.0,402,1954-01-10,0.49
+age,int64,0.0,49,,
+age_group,object,0.0,2,<= 65 years,50.99
+gender,object,0.0,2,Male,64.04
+ethnicity,object,1.23,4,Caucasian,99.0
+education_level,object,1.23,5,Not Known / Missing,46.38
+bmi_value,float64,1.23,292,,
+bmi_category,object,1.23,4,18.5-24.9 Normal Weight,57.61
+employment_status,object,1.23,5,Worker,30.42
+alcohol_consumption,object,1.23,4,Non-drinker,39.65
+smoking_status_binary,float64,33.5,2,,
+smoking_status_detail,object,1.23,4,Not Known / Missing,32.67
+smoking_years,float64,95.57,10,,
+observation_start_date,object,0.0,269,2022-05-24,1.23
+observation_end_date,object,0.0,232,2024-12-31,32.76
+observation_end_reason,object,0.0,3,Lost to Follow-Up,46.06
+tumor_diagnosis_date,object,6.16,310,2022-01-04,0.79
+Oncology Unit Intake Date,object,36.7,214,2022-05-03,1.17
+tumor_type,object,0.0,20,k colon,55.91
+breast_cancer_subtype,object,99.75,1,1900-01-03,100.0
+colon_cancer_location,object,73.4,2,Left,50.0
+stadio_TNM,object,40.89,57,T3 N1,13.75
+tumor_stage_roman,object,33.5,4,Stage IV,46.3
+histological_grade,object,40.64,3,G2,62.66
+molecular_alterations,object,0.0,2,Absent / No,70.2
+mutations_present,object,0.0,2,Absent / No,83.0
+genotipo_DPYD,float64,0.99,2,,
+genotipo_DPYD_type,float64,15.02,2,,
+surgical_intervention,object,0.0,2,Present / Yes,52.46
+surgery_date,object,48.03,194,2023-04-13,1.42
+surgery_type,object,49.51,6,Partial Tumor Excision,65.85
+surgery_type_specify,object,74.63,77,emicolectomia dx,9.71
+prior_surgery,object,48.03,2,Present / Yes,75.36
+prior_radiotherapy,object,91.38,2,Absent / No,60.0
+Number of Previous Treatment Lines,int64,0.0,2,,
+Other Surgical Intervention,int64,0.0,2,,
+surgery_complications,object,47.29,3,Missing / Not Known,53.27
+reoperation_for_complication,object,71.43,2,Absent / No,87.93
+hospitalization_for_surgery_complication,object,70.94,2,Absent / No,98.31
+oncology_treatment_lines_n,int64,0.0,4,,
+radiotherapy_status,int64,0.0,2,,
+radiotherapy_start_date,object,91.38,34,2023-01-10,5.71
+radiotherapy_end_date,object,92.36,30,2023-08-16,6.45
+transfusion_received,object,0.0,2,Absent / No,96.06
+transfusions_total_n,int64,0.0,2,,
+hypertension,object,0.0,2,Absent / No,66.75
+aortic_insufficiency,object,0.0,2,Absent / No,99.51
+dyslipidemia,object,0.0,2,Absent / No,89.9
+IPB,int64,0.0,2,,
+obesity_comorbidity,object,0.0,2,Absent / No,97.78
+ischemic_heart_disease,object,0.0,2,Absent / No,93.35
+atrial_fibrillation,object,0.0,2,Absent / No,97.54
+copd,object,0.0,2,Absent / No,93.84
+asthma,object,0.0,2,Absent / No,99.26
+diabete_tipo_II,int64,0.0,2,,
+gastroesophageal_reflux_full,int64,0.0,2,,
+hypertensive_heart_disease,int64,0.0,2,,
+renal_insufficiency,object,0.0,2,Absent / No,98.77
+depressive_syndrome,object,0.0,2,Absent / No,97.78
+anemia_comorbidity,object,0.0,2,Absent / No,97.29
+psychiatric_disorders,object,0.0,2,Absent / No,99.75
+other_comorbidities,object,0.0,2,Absent / No,93.84
+cardiovascular_disorders,object,0.0,2,Absent / No,95.57
+gastrointestinal_disorders,object,0.0,2,Absent / No,95.57
+cerebrovascular_disorders,object,0.0,2,Absent / No,99.01
+ordinary_hospitalizations_n,int64,0.0,6,,
+death_outcome,object,0.0,2,Absent / No,78.82
+adr_description,int64,0.0,2,,
+adr_n_tot,int64,0.0,35,,
+adr_n_grado1,int64,0.0,27,,
+adr_n_grado2,int64,0.0,14,,
+adr_n_grado3,int64,0.0,6,,
+adr_n_grado4,int64,0.0,4,,
+adr_n_grado5,int64,0.0,2,,
+survival_days,int64,0.0,326,,
+blood_glucose_range,object,31.53,3,Normal (65-110 mg/dL),74.82
+white_blood_cells_range,object,16.26,3,Normal (4000-11000 cells/µL),82.94
+red_blood_cells_range,object,15.02,6,4.5-5.9 (Maschi),37.39
+hemoglobin_range,object,15.02,6,<13 (Maschi),35.07
+neutrophils_percent_range,object,16.26,3,Normal (40-75%),84.71
+platelet_count_range,object,16.01,3,Normal (150k-400k /µL),85.92
+creatinine_range,object,19.21,6,0.70-1.40 (Maschi),52.13
+ast_got_range,object,16.75,2,Normal (<21 U/L),53.55
+alt_gpt_range,object,16.75,2,Normal (<21 U/L),60.65
+azotemia_range,object,42.36,3,1950-10-01 00:00:00,88.03
+gamma_gt_range,object,47.29,3,0.9-1.4,47.66
+total_bilirubin_range,object,22.17,3,0.2.-1.0,85.13
+direct_bilirubin_range,object,27.34,2,>=0.2,58.64
+albumin_range,object,46.06,3,Normal (3.6-4.9 g/dL),77.63
+ejection_fraction_percent,float64,69.7,19,,
+ejection_fraction_category,object,69.7,3,Preserved >=50%,94.31
+death_date,object,76.11,90,2024-02-01,2.06
+end_reason_progression_any_line,object,0.0,2,Absent / No,80.54
+chemio_fine_tossicita,int64,0.0,2,,
+end_reason_other_any_line,object,0.0,2,Absent / No,57.39
+farmaci_cat_n,int64,0.0,11,,
+cci_groups,object,66.75,19,['peripheral_vascular_disease'],28.15
+cci_score,int64,0.0,5,,
+n_treatment_lines,int64,0.0,4,,
+total_chemo_cycles,float64,0.49,50,,
+received_chemo,bool,0.0,2,,
+treatment_duration_days,float64,0.49,281,,
+any_dose_reduction,bool,0.0,2,,
+any_toxicity,bool,0.0,2,,
+end_due_to_progression,bool,0.0,2,,
+max_combo_regimen_size,int64,0.0,5,,
+total_unique_active_drugs,int64,0.0,10,,
+time_from_diagnosis_to_first_treatment_days,float64,6.16,165,,
+received_cardiotoxic_drug,bool,0.0,2,,
+received_nephrotoxic_drug,bool,0.0,2,,
+received_neurotoxic_drug,bool,0.0,2,,
+received_hematotoxic_drug,bool,0.0,2,,
+received_targeted_therapy,bool,0.0,2,,
+n_unique_active_principles,float64,54.68,16,,
+n_chronic_drugs,float64,54.68,1,,
+polypharmacy_flag,object,54.68,3,No polypharmacy (0-4),50.0
+chronic_polypharmacy_flag,object,54.68,1,No chronic polypharmacy (0-4),100.0
+n_med_events,float64,54.68,51,,
+medication_duration_days,float64,54.68,73,,
+uses_antithrombotics,float64,54.68,2,,
+uses_antidiabetics_atc,float64,54.68,2,,
+uses_renin_angiotensin_drugs,float64,54.68,2,,
+uses_diuretics,float64,54.68,2,,
+uses_lipid_lowering_drugs,float64,54.68,2,,
+uses_cardiovascular_drugs,float64,54.68,2,,
+uses_metabolic_drugs,float64,54.68,2,,
+uses_respiratory_drugs,float64,54.68,2,,
+uses_cns_drugs,float64,54.68,2,,
+uses_gastrointestinal_drugs,float64,54.68,2,,
+uses_analgesic_drugs,float64,54.68,2,,
+n_cardiovascular_drugs,float64,54.68,9,,
+n_metabolic_drugs,float64,54.68,6,,
+n_respiratory_drugs,float64,54.68,2,,
+n_cns_drugs,float64,54.68,4,,
+n_gastrointestinal_drugs,float64,54.68,5,,
+n_analgesic_drugs,float64,54.68,4,,
+phenotype,int64,0.0,2,,

@@ -1,0 +1,4 @@
+ethnicity,n_<= 65 years_Accelerated aging,n_<= 65 years_Decelerated aging,n_> 65 years_Accelerated aging,n_> 65 years_Decelerated aging,pct_<= 65 years_Accelerated aging,pct_<= 65 years_Decelerated aging,pct_> 65 years_Accelerated aging,pct_> 65 years_Decelerated aging
+African or African American,1,1,0,0,1.25,0.8130081300813009,,
+Asian,1,0,0,0,1.25,,,
+Caucasian,78,122,52,145,97.5,99.1869918699187,100.0,100.0

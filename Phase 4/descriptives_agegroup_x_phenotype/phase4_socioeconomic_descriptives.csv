@@ -1,0 +1,86 @@
+age_group_clean,phenotype_label,level,count,percent_within_age_pheno,variable
+<= 65 years,Accelerated Aging (Frailty),Non-drinker,41,68.33333333333333,alcohol_consumption
+<= 65 years,Accelerated Aging (Frailty),"Yes, High",1,1.6666666666666667,alcohol_consumption
+<= 65 years,Accelerated Aging (Frailty),"Yes, Moderate",18,30.0,alcohol_consumption
+<= 65 years,Decelerated Aging (Resilient),Non-drinker,50,61.72839506172839,alcohol_consumption
+<= 65 years,Decelerated Aging (Resilient),"Yes, Moderate",31,38.27160493827161,alcohol_consumption
+> 65 years,Accelerated Aging (Frailty),Non-drinker,23,58.97435897435897,alcohol_consumption
+> 65 years,Accelerated Aging (Frailty),"Yes, High",1,2.5641025641025643,alcohol_consumption
+> 65 years,Accelerated Aging (Frailty),"Yes, Moderate",15,38.46153846153846,alcohol_consumption
+> 65 years,Decelerated Aging (Resilient),Non-drinker,50,54.34782608695652,alcohol_consumption
+> 65 years,Decelerated Aging (Resilient),"Yes, Moderate",42,45.65217391304348,alcohol_consumption
+<= 65 years,Accelerated Aging (Frailty),18.5-24.9 Normal Weight,52,65.0,bmi_category
+<= 65 years,Accelerated Aging (Frailty),25-29.99 Overweight,17,21.25,bmi_category
+<= 65 years,Accelerated Aging (Frailty),<18.5 Underweight,7,8.75,bmi_category
+<= 65 years,Accelerated Aging (Frailty),>=30 Obese,4,5.0,bmi_category
+<= 65 years,Decelerated Aging (Resilient),18.5-24.9 Normal Weight,68,53.54330708661417,bmi_category
+<= 65 years,Decelerated Aging (Resilient),25-29.99 Overweight,34,26.771653543307085,bmi_category
+<= 65 years,Decelerated Aging (Resilient),<18.5 Underweight,5,3.937007874015748,bmi_category
+<= 65 years,Decelerated Aging (Resilient),>=30 Obese,20,15.748031496062993,bmi_category
+> 65 years,Accelerated Aging (Frailty),18.5-24.9 Normal Weight,37,71.15384615384616,bmi_category
+> 65 years,Accelerated Aging (Frailty),25-29.99 Overweight,12,23.076923076923077,bmi_category
+> 65 years,Accelerated Aging (Frailty),<18.5 Underweight,2,3.8461538461538463,bmi_category
+> 65 years,Accelerated Aging (Frailty),>=30 Obese,1,1.9230769230769231,bmi_category
+> 65 years,Decelerated Aging (Resilient),18.5-24.9 Normal Weight,79,53.74149659863946,bmi_category
+> 65 years,Decelerated Aging (Resilient),25-29.99 Overweight,51,34.69387755102041,bmi_category
+> 65 years,Decelerated Aging (Resilient),<18.5 Underweight,1,0.6802721088435374,bmi_category
+> 65 years,Decelerated Aging (Resilient),>=30 Obese,16,10.884353741496598,bmi_category
+<= 65 years,Accelerated Aging (Frailty),Elementary School,8,12.903225806451612,education_level
+<= 65 years,Accelerated Aging (Frailty),High School,25,40.32258064516129,education_level
+<= 65 years,Accelerated Aging (Frailty),Middle School,19,30.64516129032258,education_level
+<= 65 years,Accelerated Aging (Frailty),University Degree,10,16.129032258064516,education_level
+<= 65 years,Decelerated Aging (Resilient),Elementary School,10,21.73913043478261,education_level
+<= 65 years,Decelerated Aging (Resilient),High School,17,36.95652173913044,education_level
+<= 65 years,Decelerated Aging (Resilient),Middle School,12,26.08695652173913,education_level
+<= 65 years,Decelerated Aging (Resilient),University Degree,7,15.217391304347826,education_level
+> 65 years,Accelerated Aging (Frailty),Elementary School,4,10.81081081081081,education_level
+> 65 years,Accelerated Aging (Frailty),High School,19,51.351351351351354,education_level
+> 65 years,Accelerated Aging (Frailty),Middle School,9,24.324324324324323,education_level
+> 65 years,Accelerated Aging (Frailty),University Degree,5,13.513513513513514,education_level
+> 65 years,Decelerated Aging (Resilient),Elementary School,20,28.571428571428573,education_level
+> 65 years,Decelerated Aging (Resilient),High School,6,8.571428571428571,education_level
+> 65 years,Decelerated Aging (Resilient),Middle School,33,47.142857142857146,education_level
+> 65 years,Decelerated Aging (Resilient),University Degree,11,15.714285714285714,education_level
+<= 65 years,Accelerated Aging (Frailty),Homemaker,7,11.11111111111111,employment_status
+<= 65 years,Accelerated Aging (Frailty),Retired,11,17.46031746031746,employment_status
+<= 65 years,Accelerated Aging (Frailty),Unemployed,5,7.936507936507937,employment_status
+<= 65 years,Accelerated Aging (Frailty),Worker,40,63.492063492063494,employment_status
+<= 65 years,Decelerated Aging (Resilient),Homemaker,8,10.0,employment_status
+<= 65 years,Decelerated Aging (Resilient),Retired,4,5.0,employment_status
+<= 65 years,Decelerated Aging (Resilient),Unemployed,9,11.25,employment_status
+<= 65 years,Decelerated Aging (Resilient),Worker,59,73.75,employment_status
+> 65 years,Accelerated Aging (Frailty),Homemaker,1,2.5,employment_status
+> 65 years,Accelerated Aging (Frailty),Retired,25,62.5,employment_status
+> 65 years,Accelerated Aging (Frailty),Unemployed,1,2.5,employment_status
+> 65 years,Accelerated Aging (Frailty),Worker,13,32.5,employment_status
+> 65 years,Decelerated Aging (Resilient),Homemaker,10,9.433962264150944,employment_status
+> 65 years,Decelerated Aging (Resilient),Retired,78,73.58490566037736,employment_status
+> 65 years,Decelerated Aging (Resilient),Unemployed,3,2.830188679245283,employment_status
+> 65 years,Decelerated Aging (Resilient),Worker,15,14.150943396226415,employment_status
+<= 65 years,Accelerated Aging (Frailty),African or African American,1,1.25,ethnicity
+<= 65 years,Accelerated Aging (Frailty),Asian,1,1.25,ethnicity
+<= 65 years,Accelerated Aging (Frailty),Caucasian,78,97.5,ethnicity
+<= 65 years,Decelerated Aging (Resilient),African or African American,1,0.7874015748031497,ethnicity
+<= 65 years,Decelerated Aging (Resilient),Caucasian,126,99.21259842519684,ethnicity
+> 65 years,Accelerated Aging (Frailty),Caucasian,52,100.0,ethnicity
+> 65 years,Decelerated Aging (Resilient),Caucasian,146,100.0,ethnicity
+<= 65 years,Accelerated Aging (Frailty),Female,34,42.5,gender
+<= 65 years,Accelerated Aging (Frailty),Male,46,57.5,gender
+<= 65 years,Decelerated Aging (Resilient),Female,45,35.43307086614173,gender
+<= 65 years,Decelerated Aging (Resilient),Male,82,64.56692913385827,gender
+> 65 years,Accelerated Aging (Frailty),Female,11,21.153846153846153,gender
+> 65 years,Accelerated Aging (Frailty),Male,41,78.84615384615384,gender
+> 65 years,Decelerated Aging (Resilient),Female,56,38.095238095238095,gender
+> 65 years,Decelerated Aging (Resilient),Male,91,61.904761904761905,gender
+<= 65 years,Accelerated Aging (Frailty),Current Smoker,16,24.242424242424242,smoking_status_detail
+<= 65 years,Accelerated Aging (Frailty),Ex-Smoker,28,42.42424242424242,smoking_status_detail
+<= 65 years,Accelerated Aging (Frailty),Never Smoked,22,33.333333333333336,smoking_status_detail
+<= 65 years,Decelerated Aging (Resilient),Current Smoker,14,21.21212121212121,smoking_status_detail
+<= 65 years,Decelerated Aging (Resilient),Ex-Smoker,24,36.36363636363637,smoking_status_detail
+<= 65 years,Decelerated Aging (Resilient),Never Smoked,28,42.42424242424242,smoking_status_detail
+> 65 years,Accelerated Aging (Frailty),Current Smoker,3,7.894736842105263,smoking_status_detail
+> 65 years,Accelerated Aging (Frailty),Ex-Smoker,23,60.526315789473685,smoking_status_detail
+> 65 years,Accelerated Aging (Frailty),Never Smoked,12,31.57894736842105,smoking_status_detail
+> 65 years,Decelerated Aging (Resilient),Current Smoker,6,6.0,smoking_status_detail
+> 65 years,Decelerated Aging (Resilient),Ex-Smoker,53,53.0,smoking_status_detail
+> 65 years,Decelerated Aging (Resilient),Never Smoked,41,41.0,smoking_status_detail

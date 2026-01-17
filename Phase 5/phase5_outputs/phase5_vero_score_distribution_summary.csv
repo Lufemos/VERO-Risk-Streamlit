@@ -1,0 +1,4 @@
+risk_stratum,n_patients,mean_score,median_score,q1,q3,min_score,max_score,percent_of_cohort
+Low Risk (0–30),239,9.154811715481172,5.0,1.0,17.0,0,30,58.9
+Medium Risk (31–70),83,43.9277108433735,41.0,36.5,50.0,32,69,20.4
+High Risk (71–100),84,90.30952380952381,93.0,83.75,100.0,72,100,20.7

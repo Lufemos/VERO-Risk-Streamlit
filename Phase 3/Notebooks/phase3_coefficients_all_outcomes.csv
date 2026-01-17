@@ -1,0 +1,298 @@
+feature,coef,OR,Outcome
+IPB,-0.1239095933273542,0.8834597079250499,Death
+age_group_> 65 years,-0.136247936221595,0.8726262500100086,Death
+alcohol_consumption_Not Known / Missing,-0.007286196598364691,0.992740283380263,Death
+"alcohol_consumption_Yes, High",0.3545040218590291,1.425473475239051,Death
+"alcohol_consumption_Yes, Moderate",0.04598085805847803,1.047054368111624,Death
+alt_gpt_range_Normal (<21 U/L),0.06532320183613358,1.067503987883735,Death
+anemia_comorbidity,0.05967174790372369,1.061488053672941,Death
+aortic_insufficiency,0.08672935830914014,1.090601477545135,Death
+ast_got_range_Normal (<21 U/L),0.1294265726863775,1.138175535222451,Death
+asthma,0.2502748437698355,1.284378371575333,Death
+atrial_fibrillation,0.0621009956142036,1.06406980568498,Death
+bmi_category_25-29.99 Overweight,0.1216530083228959,1.129362154514979,Death
+bmi_category_<18.5 Underweight,-0.1402562708349999,0.869135472782906,Death
+bmi_category_>=30 Obese,0.05270434830012027,1.054117947281641,Death
+cardiovascular_disorders,0.1253425273667194,1.133536653903467,Death
+cci_score,0.06799000766364452,1.070354613082025,Death
+cerebrovascular_disorders,0.3090531861755105,1.36213481531823,Death
+copd,-0.1111236479346322,0.8948280984420967,Death
+creatinine_range_0.70-1.40 (Maschi),-0.02810631232530543,0.9722849954277952,Death
+creatinine_range_<0.70 (Femmine),0.05738162059377328,1.059059892352559,Death
+creatinine_range_<0.70 (Maschi),-0.1100492823353674,0.8957899875860991,Death
+creatinine_range_>1.20 (Femmine),0.3776307925473218,1.458824234654789,Death
+creatinine_range_>1.40 (Maschi),-0.02644845227520366,0.9738982447803533,Death
+depressive_syndrome,0.1589559809943918,1.172286342665855,Death
+diabete_tipo_II,0.07767926344185382,1.080775958712255,Death
+direct_bilirubin_range_Normal (<0.2 mg/dL),0.008090224728884862,1.008123039028962,Death
+dyslipidemia,0.1599275451423196,1.173425847508885,Death
+education_level_High School,0.06350978347259907,1.065569910724495,Death
+education_level_Middle School,0.01132770321731832,1.011392104590901,Death
+education_level_Not Known / Missing,0.005434639656356848,1.005449434099134,Death
+education_level_University Degree,0.1061536808768738,1.111992755397512,Death
+employment_status_Not Known / Missing,0.09344354618564048,1.097948618204199,Death
+employment_status_Retired,-0.167632480242785,0.845664576019035,Death
+employment_status_Unemployed,0.1350544035361353,1.144599052893419,Death
+employment_status_Worker,-0.005182612682295857,0.9948307938844647,Death
+ethnicity_Asian,0.1333747347544364,1.14267811931442,Death
+ethnicity_Caucasian,-0.200514003260672,0.8183100309368264,Death
+ethnicity_Missing / Not Noted,0.4910095091772036,1.633964890193375,Death
+gastroesophageal_reflux_full,0.03883222816061015,1.039596054076167,Death
+gastrointestinal_disorders,-0.197696343911055,0.8206190012646817,Death
+gender_Male,-0.02149979624837231,0.978729676886892,Death
+genotipo_DPYD_type,0.182391194177009,1.200083567769352,Death
+hemoglobin_range_13-17 (Maschi),0.1523610518723275,1.164580634553363,Death
+hemoglobin_range_<12 (Femmine),-0.009020503491504595,0.9910200591932087,Death
+hemoglobin_range_<13 (Maschi),-0.1597079647105233,0.8523926813652108,Death
+hemoglobin_range_>16 (Femmine),-0.2801692831072354,0.7556558108641234,Death
+hemoglobin_range_>17 (Maschi),0.5407391051811636,1.717275640570192,Death
+hypertension,0.0427328503551197,1.043659044461776,Death
+hypertensive_heart_disease,0.2496828256220521,1.283618221304319,Death
+ischemic_heart_disease,-0.06952308869454757,0.9328385951105269,Death
+molecular_alterations_Present / Yes,-0.03736362154439492,0.9633257856456316,Death
+mutations_present_Present / Yes,-0.04183665182006842,0.9590264229992118,Death
+neutrophils_percent_range_Low (<40%),0.1336993489523328,1.143049109066587,Death
+neutrophils_percent_range_Normal (40-75%),0.1612129580582489,1.174935154082423,Death
+obesity_comorbidity,0.2302191430500391,1.258875853597941,Death
+platelet_count_range_Low (<150k /µL),0.1566021487618958,1.169530222281801,Death
+platelet_count_range_Normal (150k-400k /µL),0.20851544678956,1.231847958010158,Death
+psychiatric_disorders,0.2394256782271977,1.270519253873492,Death
+radiotherapy_status,-0.02226197888258121,0.9779839903343532,Death
+red_blood_cells_range_4.5-5.9 (Maschi),0.04039337851891087,1.041220287334762,Death
+red_blood_cells_range_<4.0 (Femmine),-0.2396683715100691,0.7868887725367038,Death
+red_blood_cells_range_<4.5 (Maschi),-0.1125022742537736,0.8935953148436879,Death
+red_blood_cells_range_>5.0 (Femmine),-0.02512473977319848,0.975188259678709,Death
+red_blood_cells_range_>5.9 (Maschi),-0.2567710430195536,0.7735453020884763,Death
+renal_insufficiency,-0.06037329333882398,0.94141304476542,Death
+smoking_status_detail_Ex-Smoker,-0.08401396617011202,0.9194184152514646,Death
+smoking_status_detail_Never Smoked,-0.0327573342997146,0.9677733765010007,Death
+smoking_status_detail_Not Known / Missing,0.08984189854302316,1.094001306831078,Death
+surgical_intervention,0.2089974145445279,1.232441812102709,Death
+time_from_diagnosis_to_first_treatment_days,-3.450836580928434e-05,0.9999654922295975,Death
+total_bilirubin_range_>1.0,0.1070426060590998,1.112981673232102,Death
+total_bilirubin_range_Low (<0.2 mg/dL),0.00357333652383524,1.003579728502087,Death
+tumor_type_K DIGIUNO- INTESTINO TENUE,0.06349598839341995,1.065555211204596,Death
+tumor_type_K retto con secondarismi polmonari,0.331830518170651,1.393516652746101,Death
+tumor_type_k ano,0.1477865284157096,1.159265399725672,Death
+tumor_type_k appendice,0.3142312267648055,1.369206297089758,Death
+tumor_type_k cieco,0.2516566982070349,1.286154422366353,Death
+tumor_type_k cieco - k colon DESTRO,0.3938370598118793,1.482658944264456,Death
+tumor_type_k colon,0.108048358501725,1.114101620368931,Death
+tumor_type_k colon-retto,0.3799308210728417,1.462183433654092,Death
+tumor_type_k colon-retto metastatico,-0.517422314156037,0.5960550120041105,Death
+tumor_type_k esofago,0.1437932952764666,1.154645413195124,Death
+tumor_type_k fegato,-1.141610922155793,0.3193042330218792,Death
+tumor_type_k gastrico,-0.225437751223411,0.7981667438048268,Death
+tumor_type_k laringe,0.07848988005723524,1.08165240884642,Death
+tumor_type_k mammella,-0.02202956597544205,0.9782113128520027,Death
+tumor_type_k pancreas,-0.1322000231240506,0.8761657241455081,Death
+tumor_type_k retto,0.1396273071002481,1.149845179856213,Death
+tumor_type_k sigma distale,-0.6418414018584856,0.5263223602062308,Death
+tumor_type_k testa-collo,-1.913839647299978,0.1475129003096829,Death
+tumor_type_k vie biliari,0.064840280480731,1.066988591868896,Death
+white_blood_cells_range_Low (<4000 cells/µL),0.05373602568997897,1.055206018106622,Death
+white_blood_cells_range_Normal (4000-11000 cells/µL),0.2441855778604683,1.276581213718989,Death
+Intercept,6.830324811599428,925.4913739969269,Death
+red_blood_cells_range_>5.0 (Femmine),1.22139256056142,3.39190788345777,Hospitalization
+atrial_fibrillation_Present / Yes,1.037759285125124,2.8228846428722,Hospitalization
+education_level_High School,0.8224008896281128,2.275957606171357,Hospitalization
+white_blood_cells_range_Low (<4000 cells/µL),0.6845988045453868,1.982976114924172,Hospitalization
+creatinine_range_>1.40 (Maschi),0.6680004126193728,1.950333556610204,Hospitalization
+tumor_type_k gastrico,0.6460540592656553,1.907997111747268,Hospitalization
+platelet_count_range_Normal (150k-400k /µL),0.5176884025088188,1.678143969286059,Hospitalization
+employment_status_Not Known / Missing,0.5144574427417348,1.672730703369249,Hospitalization
+neutrophils_percent_range_Low (<40%),0.4942589276136979,1.63928296147225,Hospitalization
+bmi_category_<18.5 Underweight,0.4737290575255955,1.605971802101197,Hospitalization
+depressive_syndrome_Present / Yes,0.4173978788973415,1.518006375497873,Hospitalization
+platelet_count_range_Low (<150k /µL),0.4115931832505374,1.50922033531289,Hospitalization
+hemoglobin_range_<12 (Femmine),0.3595747134605531,1.432719968457532,Hospitalization
+hemoglobin_range_>17 (Maschi),0.3489080323472507,1.417518818468618,Hospitalization
+red_blood_cells_range_<4.5 (Maschi),0.3461109361980713,1.413559422027801,Hospitalization
+education_level_Middle School,0.3371687179878152,1.400975413552495,Hospitalization
+copd_Present / Yes,0.3290910618552146,1.389704398886652,Hospitalization
+hemoglobin_range_<13 (Maschi),0.3284722002982035,1.388844630324867,Hospitalization
+alt_gpt_range_Normal (<21 U/L),0.2933790144894441,1.340950933962323,Hospitalization
+IPB,0.2920830360758124,1.339214216115666,Hospitalization
+hemoglobin_range_13-17 (Maschi),0.2870309094987527,1.332465398676744,Hospitalization
+tumor_type_k colon,0.2821267741762177,1.325946805146069,Hospitalization
+dyslipidemia_Present / Yes,0.2677270808932949,1.306990388685671,Hospitalization
+molecular_alterations_Present / Yes,0.2511596170053775,1.28551525805201,Hospitalization
+bmi_category_25-29.99 Overweight,0.2231192905068772,1.249969674358698,Hospitalization
+tumor_type_k retto,0.2149088301953102,1.239748864151741,Hospitalization
+obesity_comorbidity_Present / Yes,0.2064987576899668,1.22936620696214,Hospitalization
+tumor_type_k mammella,0.2031063576575024,1.225202771014718,Hospitalization
+red_blood_cells_range_<4.0 (Femmine),0.1748057796849928,1.191014874863277,Hospitalization
+tumor_type_k colon-retto,0.1706959432351314,1.1861300433233,Hospitalization
+gender_Male,0.1611638725575543,1.174877483217515,Hospitalization
+hypertension_Present / Yes,0.1598362747110075,1.173318753313012,Hospitalization
+tumor_type_k vie biliari,0.1224730137675101,1.130288617431026,Hospitalization
+employment_status_Worker,0.1003372678872168,1.105543719599658,Hospitalization
+smoking_status_detail_Not Known / Missing,0.08691167223957225,1.09080032751305,Hospitalization
+ethnicity_Caucasian,0.0698553151475628,1.072353016791518,Hospitalization
+education_level_University Degree,0.06166964300740162,1.063610915379359,Hospitalization
+cci_score,0.0571136832304991,1.058776168649241,Hospitalization
+neutrophils_percent_range_Normal (40-75%),-0.01002529084632967,0.9900247948675925,Hospitalization
+hemoglobin_range_>16 (Femmine),-0.01718490051855908,0.9829619176627241,Hospitalization
+direct_bilirubin_range_Normal (<0.2 mg/dL),-0.02225680761455847,0.9779890477647658,Hospitalization
+creatinine_range_<0.70 (Maschi),-0.02608793424244093,0.97424941595764,Hospitalization
+genotipo_DPYD_type,-0.03463306405379075,0.9659597966081142,Hospitalization
+ast_got_range_Normal (<21 U/L),-0.04790961063080653,0.953219944133058,Hospitalization
+employment_status_Retired,-0.05503196787891326,0.9464548913145038,Hospitalization
+tumor_type_K DIGIUNO- INTESTINO TENUE,-0.07358287298113071,0.9290591486997746,Hospitalization
+tumor_type_k cieco - k colon DESTRO,-0.1063512470171449,0.8991087833276635,Hospitalization
+tumor_type_k pancreas,-0.1147156119097297,0.8916196738709711,Hospitalization
+ethnicity_Missing / Not Noted,-0.1264162316185932,0.8812479671675086,Hospitalization
+tumor_type_k ano,-0.1365103138048316,0.8723973224775018,Hospitalization
+gastroesophageal_reflux_full,-0.1405307161394949,0.8688969753621764,Hospitalization
+red_blood_cells_range_>5.9 (Maschi),-0.1460155609205287,0.8641442561999232,Hospitalization
+alcohol_consumption_Not Known / Missing,-0.1506013000141005,0.8601905882750369,Hospitalization
+asthma_Present / Yes,-0.1518254131020317,0.8591382619324438,Hospitalization
+mutations_present_Present / Yes,-0.1545138994023364,0.856831582612428,Hospitalization
+ischemic_heart_disease_Present / Yes,-0.1577840252097804,0.8540342119114136,Hospitalization
+gastrointestinal_disorders_Present / Yes,-0.1598840162258651,0.8522426295508025,Hospitalization
+farmaci_cat_n,-0.1708028181920712,0.8429877789390473,Hospitalization
+tumor_type_k sigma distale,-0.173179887550319,0.8409863182682008,Hospitalization
+white_blood_cells_range_Normal (4000-11000 cells/µL),-0.1817955464237972,0.8337717906148934,Hospitalization
+"alcohol_consumption_Yes, Moderate",-0.2418273722976575,0.7851917116941073,Hospitalization
+tumor_type_K retto con secondarismi polmonari,-0.2483773504507971,0.7800655296537048,Hospitalization
+total_bilirubin_range_>1.0,-0.2534524260468322,0.7761166669848336,Hospitalization
+diabete_tipo_II,-0.2856658004409484,0.7515137295405563,Hospitalization
+tumor_type_k fegato,-0.2940362556186905,0.7452494714728117,Hospitalization
+age_group_> 65 years,-0.2946839464750355,0.7447669364880604,Hospitalization
+renal_insufficiency_Present / Yes,-0.3017131968585038,0.7395501397795885,Hospitalization
+creatinine_range_0.70-1.40 (Maschi),-0.3250768296881805,0.722471844223203,Hospitalization
+smoking_status_detail_Never Smoked,-0.3676323220793237,0.6923717046833334,Hospitalization
+smoking_status_detail_Ex-Smoker,-0.4274175576037526,0.6521911679825103,Hospitalization
+"alcohol_consumption_Yes, High",-0.4315282739210583,0.6495156979230011,Hospitalization
+tumor_type_k cieco,-0.4411635976425866,0.6432874576523758,Hospitalization
+hypertensive_heart_disease,-0.4439985509764181,0.641466350326515,Hospitalization
+cerebrovascular_disorders_Present / Yes,-0.4787285212656892,0.6195706621226377,Hospitalization
+tumor_type_k appendice,-0.4955247256781602,0.6092511336926392,Hospitalization
+aortic_insufficiency_Present / Yes,-0.4998855192518334,0.6066000997710423,Hospitalization
+employment_status_Unemployed,-0.5789303411893477,0.5604975872099554,Hospitalization
+red_blood_cells_range_4.5-5.9 (Maschi),-0.5818687397062369,0.5588530392828501,Hospitalization
+total_bilirubin_range_Low (<0.2 mg/dL),-0.6713183513895064,0.5110344105642871,Hospitalization
+cardiovascular_disorders_Present / Yes,-0.704489783661436,0.494360740848039,Hospitalization
+anemia_comorbidity_Present / Yes,-0.7701614409019609,0.4629383250973285,Hospitalization
+bmi_category_>=30 Obese,-0.7949972536218074,0.4515824751371511,Hospitalization
+creatinine_range_>1.20 (Femmine),-0.8027347184440152,0.4481018545759314,Hospitalization
+education_level_Not Known / Missing,-1.074807098277329,0.3413635985763713,Hospitalization
+creatinine_range_<0.70 (Femmine),-1.408112522499007,0.24460453327008,Hospitalization
+"cat__alcohol_consumption_Yes, High",6.241314735542629,513.5332276953644,Severe_ADR
+cat__red_blood_cells_range_>5.0 (Femmine),4.550580905401025,94.68739676202289,Severe_ADR
+cat__tumor_type_k colon-retto,4.066643409567958,58.36074035460049,Severe_ADR
+cat__ethnicity_Caucasian,3.51093746250246,33.47963898312854,Severe_ADR
+cat__red_blood_cells_range_<4.5 (Maschi),-2.938969482332708,0.05292023588627525,Severe_ADR
+cat__hemoglobin_range_<12 (Femmine),2.819078434603417,16.76139682905404,Severe_ADR
+cat__ethnicity_Asian,-2.767547089197882,0.06281589771617514,Severe_ADR
+cat__tumor_type_k cieco,-2.767365373789596,0.06282731336984415,Severe_ADR
+cat__alcohol_consumption_Non-drinker,-2.473507731842674,0.08428867776410472,Severe_ADR
+cat__creatinine_range_<0.70 (Femmine),-2.393590704112462,0.09130125878631469,Severe_ADR
+cat__asthma_Absent / No,-2.295369856795041,0.1007241328732555,Severe_ADR
+cat__tumor_type_k retto,2.130908829639302,8.42251796808147,Severe_ADR
+cat__obesity_comorbidity_Present / Yes,-2.094058641738289,0.1231861513913959,Severe_ADR
+cat__gender_Female,-2.036933913568114,0.1304280019622857,Severe_ADR
+cat__asthma_Present / Yes,1.94957344035009,7.025690065430553,Severe_ADR
+cat__gastrointestinal_disorders_Present / Yes,-1.932205401774452,0.1448284411154659,Severe_ADR
+cat__hemoglobin_range_<13 (Maschi),-1.931215639819948,0.1449718577588729,Severe_ADR
+cat__red_blood_cells_range_4.5-5.9 (Maschi),-1.879436019386957,0.1526761878903184,Severe_ADR
+cat__alcohol_consumption_Not Known / Missing,-1.823611025738558,0.1614417268745199,Severe_ADR
+cat__hemoglobin_range_13-17 (Maschi),-1.818407195211885,0.1622840319667937,Severe_ADR
+cat__obesity_comorbidity_Absent / No,1.751196242153709,5.761490693351575,Severe_ADR
+cat__gender_Male,1.700730391926338,5.477946979162694,Severe_ADR
+cat__gastrointestinal_disorders_Absent / No,1.588985747844116,4.898777811813127,Severe_ADR
+cat__renal_insufficiency_Absent / No,-1.537037357643936,0.2150171777264483,Severe_ADR
+cat__education_level_University Degree,1.482071074369284,4.402053226070377,Severe_ADR
+cat__creatinine_range_0.70-1.20 (Femmine),1.477216686005496,4.380735733668856,Severe_ADR
+cat__tumor_type_k cieco - k colon DESTRO,-1.446704265368114,0.2353446448521597,Severe_ADR
+cat__bmi_category_<18.5 Underweight,-1.432249273453194,0.2387712559437883,Severe_ADR
+cat__tumor_type_k colon,1.427023516392921,4.166279854425853,Severe_ADR
+cat__tumor_type_k pancreas,1.38938316335022,4.012374309981155,Severe_ADR
+cat__education_level_Not Known / Missing,-1.350326519657707,0.2591556274226791,Severe_ADR
+cat__tumor_type_k esofago,-1.269027787593635,0.2811047825287916,Severe_ADR
+cat__dyslipidemia_Present / Yes,-1.243915698837883,0.2882532921206331,Severe_ADR
+cat__tumor_type_K retto con secondarismi polmonari,-1.228084944236795,0.2928528705911359,Severe_ADR
+cat__creatinine_range_>1.20 (Femmine),-1.223049870271991,0.2943311248921863,Severe_ADR
+cat__neutrophils_percent_range_High (>75%),1.219990494173435,3.38715553575523,Severe_ADR
+cat__smoking_status_detail_Current Smoker,-1.206725748669824,0.2991752524597479,Severe_ADR
+cat__renal_insufficiency_Present / Yes,1.191252878231038,3.291202100821294,Severe_ADR
+cat__atrial_fibrillation_Absent / No,-1.165406892246272,0.3117957689376882,Severe_ADR
+cat__total_bilirubin_range_>1.0,-1.093852099145359,0.3349238457411626,Severe_ADR
+cat__smoking_status_detail_Not Known / Missing,1.038437992529292,2.824801205899616,Severe_ADR
+cat__employment_status_Homemaker,1.027443387875779,2.7939137422841,Severe_ADR
+cat__hypertension_Present / Yes,-0.996130152790309,0.3693058365864131,Severe_ADR
+cat__platelet_count_range_Low (<150k /µL),0.9204959358999995,2.510535145758228,Severe_ADR
+cat__alt_gpt_range_High (>=21 U/L),-0.9136142304221888,0.4010720345918832,Severe_ADR
+cat__age_group_<= 65 years,-0.9043091033098881,0.4048214783263427,Severe_ADR
+cat__dyslipidemia_Absent / No,0.8991660983742844,2.457552899080341,Severe_ADR
+cat__bmi_category_18.5-24.9 Normal Weight,0.8802928309942687,2.411605795952727,Severe_ADR
+cat__creatinine_range_<0.70 (Maschi),0.8298648067882989,2.293008720095016,Severe_ADR
+cat__atrial_fibrillation_Present / Yes,0.8196674063589542,2.269744809290203,Severe_ADR
+num__farmaci_cat_n,0.7874905574408396,2.197874061415866,Severe_ADR
+cat__platelet_count_range_High (>400k /µL),-0.7470719574803103,0.4737516889715948,Severe_ADR
+cat__neutrophils_percent_range_Normal (40-75%),-0.727042820954619,0.4833361904609317,Severe_ADR
+"cat__alcohol_consumption_Yes, Moderate",-0.7149787956414366,0.4892024849112537,Severe_ADR
+cat__education_level_High School,0.7110530057179244,2.036134191134384,Severe_ADR
+cat__molecular_alterations_Absent / No,-0.6856198656378767,0.5037778581872694,Severe_ADR
+cat__smoking_status_detail_Never Smoked,-0.6821818487001143,0.5055128357287271,Severe_ADR
+cat__creatinine_range_>1.40 (Maschi),0.6674603070547034,1.949280455021932,Severe_ADR
+cat__hypertension_Absent / No,0.6511280249523541,1.917702826030317,Severe_ADR
+cat__mutations_present_Present / Yes,-0.6385555341234451,0.5280546303144922,Severe_ADR
+cat__hemoglobin_range_12-16 (Femmine),0.6217190406950911,1.862126363034047,Severe_ADR
+cat__alt_gpt_range_Normal (<21 U/L),0.568613020642275,1.765816201566433,Severe_ADR
+cat__age_group_> 65 years,0.5588432530348707,1.748648585998486,Severe_ADR
+cat__ischemic_heart_disease_Absent / No,-0.5228956239650443,0.5928015300396504,Severe_ADR
+cat__anemia_comorbidity_Absent / No,-0.5225833322636199,0.5929866859478955,Severe_ADR
+cat__smoking_status_detail_Ex-Smoker,0.5055804323433499,1.657947567624024,Severe_ADR
+cat__tumor_type_K DIGIUNO- INTESTINO TENUE,-0.4849056262768413,0.615755305142991,Severe_ADR
+cat__white_blood_cells_range_Normal (4000-11000 cells/µL),-0.3991305328557639,0.6709031207372056,Severe_ADR
+num__hypertensive_heart_disease,-0.3509019001340793,0.7040528179550185,Severe_ADR
+cat__ast_got_range_High (>=21 U/L),-0.3502594476206339,0.7045052837858545,Severe_ADR
+num__gastroesophageal_reflux_full,0.3421850051693344,1.408020764539457,Severe_ADR
+cat__molecular_alterations_Present / Yes,0.3404570405974277,1.405589855409114,Severe_ADR
+cat__mutations_present_Absent / No,0.2960779409883481,1.344574950248679,Severe_ADR
+cat__red_blood_cells_range_4.0-5.0 (Femmine),-0.2819659523360989,0.7542993662271877,Severe_ADR
+num__IPB,0.2815714104302406,1.325210626803699,Severe_ADR
+cat__bmi_category_25-29.99 Overweight,0.2679485527305064,1.30727988230443,Severe_ADR
+cat__education_level_Middle School,-0.2573941047158649,0.773063485756621,Severe_ADR
+cat__white_blood_cells_range_Low (<4000 cells/µL),0.2495845213022704,1.283492042290287,Severe_ADR
+cat__direct_bilirubin_range_Normal (<0.2 mg/dL),-0.2394542955047456,0.7870572445740293,Severe_ADR
+cat__employment_status_Retired,-0.2243636693569382,0.7990245007989231,Severe_ADR
+cat__tumor_type_k gastrico,0.2228655921991688,1.249652599390018,Severe_ADR
+num__genotipo_DPYD_type,0.1994735732653961,1.220759948305547,Severe_ADR
+cat__depressive_syndrome_Present / Yes,-0.1850624059478487,0.8310524196198659,Severe_ADR
+cat__anemia_comorbidity_Present / Yes,0.1802545279408474,1.197522127175831,Severe_ADR
+cat__ischemic_heart_disease_Present / Yes,0.1788118038208397,1.195795678812519,Severe_ADR
+cat__ethnicity_African or African American,-0.1750134347287342,0.8394457429676065,Severe_ADR
+cat__employment_status_Unemployed,-0.1748348063367225,0.8395957052042118,Severe_ADR
+cat__cardiovascular_disorders_Present / Yes,-0.1658333716675598,0.8471873878506754,Severe_ADR
+cat__red_blood_cells_range_>5.9 (Maschi),0.1634617265454419,1.177580284259419,Severe_ADR
+cat__employment_status_Not Known / Missing,-0.1603880502863305,0.8518131784758047,Severe_ADR
+num__cci_score,0.1411736128483257,1.151624567451305,Severe_ADR
+cat__employment_status_Worker,0.1124998076375656,1.119072041645338,Severe_ADR
+cat__bmi_category_>=30 Obese,-0.05967006114938084,0.9420753095577279,Severe_ADR
+cat__direct_bilirubin_range_>=0.2,0.04692519795470297,1.048043610341885,Severe_ADR
+cat__red_blood_cells_range_<4.0 (Femmine),0.04086665629251924,1.041713190385017,Severe_ADR
+num__diabete_tipo_II,-0.03226481422557183,0.9682501417147299,Severe_ADR
+cat__total_bilirubin_range_Low (<0.2 mg/dL),0.02646835437262557,1.02682175232897,Severe_ADR
+cat__education_level_Elementary School,-0.02508739739412863,0.9752246762083021,Severe_ADR
+cat__ast_got_range_Normal (<21 U/L),0.004613621644313485,1.004624280782758,Severe_ADR
+cat__copd_Present / Yes,0.0,1.0,Severe_ADR
+cat__depressive_syndrome_Absent / No,0.0,1.0,Severe_ADR
+cat__copd_Absent / No,0.0,1.0,Severe_ADR
+cat__creatinine_range_0.70-1.40 (Maschi),0.0,1.0,Severe_ADR
+cat__total_bilirubin_range_0.2.-1.0,0.0,1.0,Severe_ADR
+cat__psychiatric_disorders_Absent / No,0.0,1.0,Severe_ADR
+cat__cardiovascular_disorders_Absent / No,0.0,1.0,Severe_ADR
+cat__cerebrovascular_disorders_Present / Yes,0.0,1.0,Severe_ADR
+cat__cerebrovascular_disorders_Absent / No,0.0,1.0,Severe_ADR
+cat__aortic_insufficiency_Present / Yes,0.0,1.0,Severe_ADR
+cat__aortic_insufficiency_Absent / No,0.0,1.0,Severe_ADR
+cat__tumor_type_Adenocarcinoma Intestinale,0.0,1.0,Severe_ADR
+cat__neutrophils_percent_range_Low (<40%),0.0,1.0,Severe_ADR
+cat__platelet_count_range_Normal (150k-400k /µL),0.0,1.0,Severe_ADR
+cat__white_blood_cells_range_High (>11000 cells/µL),0.0,1.0,Severe_ADR
+cat__tumor_type_k fegato,0.0,1.0,Severe_ADR
+cat__tumor_type_k appendice,0.0,1.0,Severe_ADR
+cat__tumor_type_k laringe,0.0,1.0,Severe_ADR
+cat__tumor_type_k mammella,0.0,1.0,Severe_ADR

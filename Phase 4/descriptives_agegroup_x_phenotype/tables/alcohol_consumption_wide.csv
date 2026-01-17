@@ -1,0 +1,4 @@
+alcohol_consumption,n_<= 65 years_Accelerated aging,n_<= 65 years_Decelerated aging,n_> 65 years_Accelerated aging,n_> 65 years_Decelerated aging,pct_<= 65 years_Accelerated aging,pct_<= 65 years_Decelerated aging,pct_> 65 years_Accelerated aging,pct_> 65 years_Decelerated aging
+Non-drinker,41,46,23,49,68.33333333333333,59.74025974025974,58.97435897435898,53.84615384615385
+"Yes, High",1,0,1,0,1.6666666666666667,,2.564102564102564,
+"Yes, Moderate",18,31,15,42,30.0,40.25974025974026,38.46153846153847,46.15384615384615

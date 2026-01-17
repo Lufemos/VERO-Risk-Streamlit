@@ -1,0 +1,4 @@
+smoking_status_detail,n_<= 65 years_Accelerated aging,n_<= 65 years_Decelerated aging,n_> 65 years_Accelerated aging,n_> 65 years_Decelerated aging,pct_<= 65 years_Accelerated aging,pct_<= 65 years_Decelerated aging,pct_> 65 years_Accelerated aging,pct_> 65 years_Decelerated aging
+Current Smoker,16,14,3,6,24.242424242424242,21.21212121212121,7.894736842105263,6.0
+Ex-Smoker,28,24,23,53,42.42424242424242,36.36363636363637,60.526315789473685,53.0
+Never Smoked,22,28,12,41,33.33333333333333,42.42424242424242,31.57894736842105,41.0

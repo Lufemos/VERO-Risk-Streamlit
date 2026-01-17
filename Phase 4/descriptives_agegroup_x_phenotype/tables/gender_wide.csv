@@ -1,0 +1,3 @@
+gender,n_<= 65 years_Accelerated aging,n_<= 65 years_Decelerated aging,n_> 65 years_Accelerated aging,n_> 65 years_Decelerated aging,pct_<= 65 years_Accelerated aging,pct_<= 65 years_Decelerated aging,pct_> 65 years_Accelerated aging,pct_> 65 years_Decelerated aging
+Female,34,45,11,56,42.5,35.43307086614173,21.153846153846153,38.095238095238095
+Male,46,82,41,91,57.49999999999999,64.56692913385827,78.84615384615384,61.904761904761905

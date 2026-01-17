@@ -1,0 +1,407 @@
+patient_id,death_outcome,survival_days,hospitalization_flag,severe_adr_flag
+1_AO San Pio,Absent / No,998,No,Yes
+1_AORN A. Cardarelli,Present / Yes,838,Yes,
+1_AORN Monaldi – Cotugno - C.T.O.,Absent / No,577,No,No
+1_AORN San Giuseppe Moscati,Absent / No,635,Yes,No
+1_AORN Sant’Anna e San Sebastiano,Absent / No,977,No,No
+1_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,321,Yes,No
+1_Ospedale del mare,Present / Yes,221,Yes,
+1_PO Andrea Tortora di Pagani,Absent / No,582,No,No
+1_PO S. Maria delle Grazie,Absent / No,1049,No,
+1_PO San Luca di Vallo della Lucania,Absent / No,126,No,Yes
+10_AO San Pio,Present / Yes,644,No,Yes
+10_AORN A. Cardarelli,Present / Yes,87,No,
+10_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,66,No,Yes
+10_AORN San Giuseppe Moscati,Absent / No,511,Yes,No
+10_AORN Sant’Anna e San Sebastiano,Absent / No,217,No,
+10_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,182,No,Yes
+10_Ospedale del mare,Absent / No,158,No,
+10_PO Andrea Tortora di Pagani,Absent / No,532,No,No
+10_PO S. Maria delle Grazie,Absent / No,432,Yes,Yes
+10_PO San Luca di Vallo della Lucania,Absent / No,719,No,
+11_AO San Pio,Absent / No,641,No,No
+11_AORN A. Cardarelli,Present / Yes,31,No,
+11_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,257,No,Yes
+11_AORN San Giuseppe Moscati,Absent / No,634,Yes,No
+11_AORN Sant’Anna e San Sebastiano,Absent / No,825,No,
+11_AOU San Giovanni di Dio Ruggi di Aragona,Present / Yes,106,Yes,No
+11_Ospedale del mare,Absent / No,476,No,
+11_PO Andrea Tortora di Pagani,Present / Yes,50,No,No
+11_PO S. Maria delle Grazie,Present / Yes,426,No,No
+11_PO San Luca di Vallo della Lucania,Present / Yes,26,No,
+12_AO San Pio,Absent / No,620,No,No
+12_AORN Monaldi – Cotugno - C.T.O.,Absent / No,656,Yes,Yes
+12_AORN San Giuseppe Moscati,Absent / No,153,No,No
+12_AORN Sant’Anna e San Sebastiano,Present / Yes,63,No,
+12_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,253,No,Yes
+12_Ospedale del mare,Absent / No,314,No,
+12_PO Andrea Tortora di Pagani,Absent / No,519,No,No
+12_PO S. Maria delle Grazie,Absent / No,495,No,No
+12_PO San Luca di Vallo della Lucania,Present / Yes,105,No,Yes
+13_AO San Pio,Absent / No,620,No,No
+13_AORN A. Cardarelli,Absent / No,960,No,
+13_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,513,No,No
+13_AORN San Giuseppe Moscati,Absent / No,271,Yes,
+13_AORN Sant’Anna e San Sebastiano,Absent / No,209,No,
+13_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,63,No,No
+13_Ospedale del mare,Absent / No,855,Yes,
+13_PO Andrea Tortora di Pagani,Absent / No,500,No,No
+13_PO S. Maria delle Grazie,Absent / No,1015,No,No
+13_PO San Luca di Vallo della Lucania,Absent / No,364,No,
+14_AO San Pio,Absent / No,634,No,No
+14_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,21,No,
+14_AORN San Giuseppe Moscati,Absent / No,392,No,No
+14_AORN Sant’Anna e San Sebastiano,Absent / No,837,No,
+14_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,85,No,No
+14_Ospedale del mare,Absent / No,89,Yes,
+14_PO Andrea Tortora di Pagani,Absent / No,347,No,No
+14_PO S. Maria delle Grazie,Present / Yes,581,No,Yes
+14_PO San Luca di Vallo della Lucania,Absent / No,203,No,Yes
+15_AO San Pio,Absent / No,622,No,No
+15_AORN A. Cardarelli,Absent / No,48,Yes,
+15_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,357,No,Yes
+15_AORN San Giuseppe Moscati,Absent / No,214,Yes,No
+15_AORN Sant’Anna e San Sebastiano,Absent / No,470,No,
+15_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,167,No,Yes
+15_Ospedale del mare,Absent / No,141,No,
+15_PO Andrea Tortora di Pagani,Absent / No,172,No,No
+15_PO S. Maria delle Grazie,Present / Yes,190,No,No
+15_PO San Luca di Vallo della Lucania,Absent / No,597,No,Yes
+16_AO San Pio,Absent / No,606,No,No
+16_AORN A. Cardarelli,Present / Yes,409,Yes,
+16_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,237,No,No
+16_AORN San Giuseppe Moscatii,Absent / No,587,No,Yes
+16_AORN San Giuseppe Moscati,Absent / No,587,No,Yes
+16_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,113,No,No
+16_Ospedale del mare,Absent / No,766,No,No
+16_PO Andrea Tortora di Pagani,Absent / No,162,No,No
+16_PO S. Maria delle Grazie,Absent / No,1001,No,No
+16_PO San Luca di Vallo della Lucania,Absent / No,79,No,
+17_AO San Pio,Absent / No,606,No,No
+17_AORN A. Cardarelli,Present / Yes,660,Yes,
+17_AORN Monaldi – Cotugno - C.T.O.,Absent / No,592,No,
+17_AORN San Giuseppe Moscati,Absent / No,508,No,
+17_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,84,No,No
+17_Ospedale del mare,Absent / No,147,Yes,
+17_PO Andrea Tortora di Pagani,Absent / No,131,No,No
+17_PO S. Maria delle Grazie,Absent / No,449,No,Yes
+17_PO San Luca di Vallo della Lucania,Absent / No,490,No,Yes
+18_AO San Pio,Absent / No,550,No,
+18_AORN A. Cardarelli,Absent / No,937,Yes,
+18_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,51,No,No
+18_AORN San Giuseppe Moscati,Absent / No,602,No,No
+18_AOU San Giovanni di Dio Ruggi di Aragona,Present / Yes,147,No,No
+18_Ospedale del mare,Absent / No,504,Yes,No
+18_PO Andrea Tortora di Pagani,Absent / No,128,No,No
+18_PO S. Maria delle Grazie,Absent / No,522,No,Yes
+18_PO San Luca di Vallo della Lucania,Present / Yes,194,No,Yes
+19_AO San Pio,Absent / No,557,No,No
+19_AORN A. Cardarelli,Absent / No,1007,Yes,
+19_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,41,No,Yes
+19_AORN San Giuseppe Moscati,Absent / No,587,No,No
+19_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,1194,No,No
+19_Ospedale del mare,Absent / No,1015,No,No
+19_PO Andrea Tortora di Pagani,Absent / No,74,No,No
+19_PO S. Maria delle Grazie,Absent / No,106,No,No
+19_PO San Luca di Vallo della Lucania,Absent / No,424,No,Yes
+2_AO San Pio,Absent / No,991,Yes,No
+2_AORN A. Cardarelli,Absent / No,876,No,
+2_AORN Monaldi – Cotugno - C.T.O.,Absent / No,704,Yes,No
+2_AORN San Giuseppe Moscatii,Absent / No,624,No,No
+2_AORN San Giuseppe Moscati,Absent / No,624,No,No
+2_AORN Sant’Anna e San Sebastiano,Present / Yes,247,No,Yes
+2_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,74,No,Yes
+2_Ospedale del mare,Absent / No,490,No,
+2_PO Andrea Tortora di Pagani,Absent / No,196,No,No
+2_PO S. Maria delle Grazie,Present / Yes,195,No,
+2_PO San Luca di Vallo della Lucania,Absent / No,433,No,
+20_AO San Pio,Absent / No,564,No,No
+20_AORN A. Cardarelli,Present / Yes,675,Yes,
+20_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,60,No,No
+20_AORN San Giuseppe Moscati,Absent / No,608,No,No
+20_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,64,No,
+20_Ospedale del mare,Present / Yes,292,No,No
+20_PO Andrea Tortora di Pagani,Absent / No,137,No,No
+20_PO San Luca di Vallo della Lucania,Absent / No,231,No,Yes
+21_AORN A. Cardarelli,Absent / No,241,Yes,
+21_AORN Monaldi – Cotugno - C.T.O.,Absent / No,234,No,
+21_AORN San Giuseppe Moscati,Absent / No,268,Yes,No
+21_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,314,Yes,No
+21_Ospedale del mare,Absent / No,486,Yes,
+21_PO Andrea Tortora di Pagani,Present / Yes,107,No,No
+21_PO S. Maria delle Grazie,Absent / No,305,No,No
+21_PO San Luca di Vallo della Lucania,Absent / No,77,No,Yes
+22_AORN A. Cardarelli,Present / Yes,634,Yes,Yes
+22_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,376,Yes,Yes
+22_AORN San Giuseppe Moscati,Absent / No,587,No,No
+22_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,1012,Yes,No
+22_Ospedale del mare,Absent / No,693,Yes,No
+22_PO S. Maria delle Grazie,Absent / No,239,No,Yes
+22_PO San Luca di Vallo della Lucania,Absent / No,162,No,
+23_AORN A. Cardarelli,Absent / No,897,Yes,
+23_AORN Monaldi – Cotugno - C.T.O.,Absent / No,1093,Yes,Yes
+23_AORN San Giuseppe Moscati,Absent / No,207,No,No
+23_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,943,No,No
+23_Ospedale del mare,Absent / No,614,No,No
+23_PO Andrea Tortora di Pagani,Present / Yes,6,No,No
+23_PO S. Maria delle Grazie,Absent / No,875,No,Yes
+23_PO San Luca di Vallo della Lucania,Absent / No,666,No,No
+24_AORN A. Cardarelli,Present / Yes,970,Yes,
+24_AORN Monaldi – Cotugno - C.T.O.,Absent / No,1035,Yes,No
+24_AORN San Giuseppe Moscati,Absent / No,561,No,No
+24_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,154,No,No
+24_Ospedale del mare,Present / Yes,604,No,No
+24_PO Andrea Tortora di Pagani,Present / Yes,42,No,
+24_PO S. Maria delle Grazie,Absent / No,488,No,No
+24_PO San Luca di Vallo della Lucania,Absent / No,322,No,Yes
+25_AORN A. Cardarelli,Absent / No,313,No,
+25_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,482,No,No
+25_AORN San Giuseppe Moscati,Absent / No,609,Yes,No
+25_AOU San Giovanni di Dio Ruggi di Aragonaa,Absent / No,384,No,
+25_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,384,No,
+25_Ospedale del mare,Absent / No,262,Yes,No
+25_PO Andrea Tortora di Pagani,Present / Yes,413,No,No
+25_PO S. Maria delle Grazie,Absent / No,313,No,No
+25_PO San Luca di Vallo della Lucania,Absent / No,257,No,No
+26_AORN A. Cardarelli,Absent / No,389,No,
+26_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,197,No,
+26_AORN San Giuseppe Moscati,Absent / No,98,Yes,
+26_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,499,Yes,No
+26_Ospedale del mare,Absent / No,364,No,No
+26_PO Andrea Tortora di Pagani,Absent / No,266,No,No
+26_PO S. Maria delle Grazie,Absent / No,688,No,No
+26_PO San Luca di Vallo della Lucania,Absent / No,300,No,
+27_AORN A. Cardarelli,Absent / No,959,No,
+27_AORN San Giuseppe Moscati,Absent / No,588,Yes,No
+27_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,455,No,No
+27_Ospedale del mare,Absent / No,458,Yes,
+27_PO Andrea Tortora di Pagani,Absent / No,126,No,No
+27_PO S. Maria delle Grazie,Absent / No,583,No,No
+27_PO San Luca di Vallo della Lucania,Absent / No,271,No,No
+28_AORN A. Cardarelli,Present / Yes,65,No,
+28_AORN San Giuseppe Moscati,Absent / No,83,Yes,No
+28_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,343,No,No
+28_Ospedale del mare,Absent / No,524,No,No
+28_PO Andrea Tortora di Pagani,Absent / No,199,No,No
+28_PO S. Maria delle Grazie,Present / Yes,383,No,No
+28_PO San Luca di Vallo della Lucania,Present / Yes,582,Yes,
+29_AORN A. Cardarelli,Absent / No,98,No,
+29_AORN San Giuseppe Moscati,Absent / No,24,No,No
+29_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,1052,No,No
+29_Ospedale del mare,Present / Yes,123,No,No
+29_PO Andrea Tortora di Pagani,Absent / No,666,No,No
+29_PO S. Maria delle Grazie,Absent / No,961,No,No
+29_PO San Luca di Vallo della Lucania,Absent / No,485,No,No
+3_AO San Pio,Absent / No,935,No,No
+3_AORN A. Cardarelli,Absent / No,951,No,
+3_AORN Monaldi – Cotugno - C.T.O.,Absent / No,181,Yes,Yes
+3_AORN San Giuseppe Moscati,Absent / No,635,No,No
+3_AORN Sant’Anna e San Sebastiano,Absent / No,949,No,No
+3_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,541,No,No
+3_Ospedale del mare,Absent / No,479,No,
+3_PO Andrea Tortora di Pagani,Absent / No,219,No,No
+3_PO S. Maria delle Grazie,Present / Yes,635,No,
+3_PO San Luca di Vallo della Lucania,Absent / No,110,No,Yes
+30_AORN A. Cardarelli,Absent / No,1085,Yes,
+30_AORN San Giuseppe Moscati,Absent / No,80,No,No
+30_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,223,No,No
+30_Ospedale del mare,Present / Yes,467,Yes,No
+30_PO Andrea Tortora di Pagani,Absent / No,14,No,No
+30_PO S. Maria delle Grazie,Absent / No,1202,No,No
+30_PO San Luca di Vallo della Lucania,Absent / No,547,No,
+31_AORN A. Cardarelli,Present / Yes,1004,Yes,
+31_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,210,No,No
+31_Ospedale del mare,Absent / No,184,No,No
+31_PO Andrea Tortora di Pagani,Absent / No,484,No,No
+31_PO S. Maria delle Grazie,Absent / No,975,No,Yes
+31_PO San Luca di Vallo della Lucania,Absent / No,617,No,No
+32_AORN A. Cardarelli,Absent / No,1023,Yes,
+32_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,744,No,No
+32_Ospedale del mare,Absent / No,855,No,Yes
+32_PO Andrea Tortora di Pagani,Absent / No,149,No,No
+32_PO S. Maria delle Grazie,Absent / No,833,No,No
+32_PO San Luca di Vallo della Lucania,Absent / No,175,No,No
+33_AORN A. Cardarelli,Absent / No,1065,Yes,
+33_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,1352,No,No
+33_Ospedale del mare,Absent / No,711,Yes,No
+33_PO Andrea Tortora di Pagani,Absent / No,99,No,Yes
+33_PO S. Maria delle Grazie,Absent / No,833,No,No
+33_PO San Luca di Vallo della Lucania,Absent / No,209,No,No
+34_AORN A. Cardarelli,Absent / No,500,Yes,
+34_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,236,No,No
+34_Ospedale del mare,Absent / No,90,No,
+34_PO Andrea Tortora di Pagani,Absent / No,145,No,No
+34_PO S. Maria delle Grazie,Absent / No,832,No,Yes
+34_PO San Luca di Vallo della Lucania,Absent / No,438,Yes,
+35_AORN A. Cardarelli,Absent / No,978,No,
+35_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,771,No,No
+35_Ospedale del mare,Absent / No,463,No,No
+35_PO Andrea Tortora di Pagani,Absent / No,435,No,No
+35_PO S. Maria delle Grazie,Absent / No,833,No,No
+35_PO San Luca di Vallo della Lucania,Absent / No,531,Yes,No
+36_AORN A. Cardarelli,Absent / No,1044,No,
+36_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,479,No,Yes
+36_Ospedale del mare,Absent / No,487,Yes,
+36_PO S. Maria delle Grazie,Absent / No,883,No,
+36_PO San Luca di Vallo della Lucania,Absent / No,83,No,
+37_AORN A. Cardarelli,Present / Yes,235,No,
+37_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,73,No,No
+37_PO S. Maria delle Grazie,Absent / No,114,No,No
+37_PO San Luca di Vallo della Lucania,Absent / No,508,No,No
+38_AORN A. Cardarelli,Absent / No,36,No,
+38_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,762,No,No
+38_PO S. Maria delle Grazie,Absent / No,841,No,
+39_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,1171,Yes,No
+39_PO S. Maria delle Grazie,Present / Yes,339,No,No
+4_AO San Pio,Present / Yes,119,No,No
+4_AORN A. Cardarelli,Absent / No,949,No,
+4_AORN Monaldi – Cotugno - C.T.O.,Absent / No,698,No,Yes
+4_AORN San Giuseppe Moscati,Absent / No,600,No,No
+4_AORN Sant’Anna e San Sebastiano,Present / Yes,636,No,
+4_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,170,No,No
+4_Ospedale del mare,Absent / No,502,No,
+4_PO Andrea Tortora di Pagani,Absent / No,109,No,No
+4_PO S. Maria delle Grazie,Absent / No,1079,No,
+4_PO San Luca di Vallo della Lucania,Absent / No,156,No,
+40_AORN A. Cardarelli,Absent / No,1058,Yes,
+40_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,1420,Yes,Yes
+40_PO S. Maria delle Grazie,Present / Yes,148,No,No
+41_AORN A. Cardarelli,Absent / No,1083,Yes,
+41_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,91,No,No
+41_PO S. Maria delle Grazie,Absent / No,792,No,No
+42_AORN A. Cardarelli,Absent / No,931,Yes,
+42_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,498,No,No
+42_PO S. Maria delle Grazie,Absent / No,974,No,Yes
+43_AORN A. Cardarelli,Absent / No,890,No,
+43_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,85,No,No
+43_PO S. Maria delle Grazie,Absent / No,806,No,No
+44_AORN A. Cardarelli,Absent / No,287,No,
+44_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,83,Yes,
+44_PO S. Maria delle Grazie,Absent / No,820,No,No
+45_AORN A. Cardarelli,Present / Yes,726,Yes,
+45_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,63,No,No
+45_PO S. Maria delle Grazie,Absent / No,510,No,No
+46_AORN A. Cardarelli,Present / Yes,910,Yes,
+46_PO S. Maria delle Grazie,Absent / No,796,No,No
+47_AORN A. Cardarelli,Absent / No,1056,No,
+47_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,176,Yes,No
+47_PO S. Maria delle Grazie,Absent / No,825,No,
+48_AORN A. Cardarelli,Absent / No,217,Yes,
+48_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,230,No,No
+48_PO S. Maria delle Grazie,Absent / No,767,No,No
+49_AORN A. Cardarelli,Absent / No,128,No,
+49_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,158,No,No
+49_PO S. Maria delle Grazie,Present / Yes,500,No,No
+5_AO San Pio,Absent / No,802,Yes,Yes
+5_AORN A. Cardarelli,Present / Yes,436,Yes,
+5_AORN Monaldi – Cotugno - C.T.O.,Absent / No,477,No,No
+5_AORN San Giuseppe Moscati,Absent / No,608,Yes,No
+5_AORN Sant’Anna e San Sebastiano,Absent / No,81,No,No
+5_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,154,No,Yes
+5_Ospedale del mare,Absent / No,374,No,
+5_PO Andrea Tortora di Pagani,Absent / No,57,No,No
+5_PO S. Maria delle Grazie,Present / Yes,330,No,
+5_PO San Luca di Vallo della Lucania,Absent / No,31,No,No
+50_AORN A. Cardarelli,Absent / No,187,No,
+50_PO S. Maria delle Grazie,Absent / No,728,No,Yes
+51_AORN A. Cardarelli,Present / Yes,332,Yes,
+51_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,111,No,No
+51_PO S. Maria delle Grazie,Absent / No,748,No,No
+52_AORN A. Cardarelli,Present / Yes,293,Yes,
+52_PO S. Maria delle Grazie,Absent / No,701,No,No
+53_AORN A. Cardarelli,Absent / No,930,Yes,
+53_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,512,No,No
+53_PO S. Maria delle Grazie,Absent / No,687,No,No
+54_AORN A. Cardarelli,Absent / No,225,Yes,
+54_PO S. Maria delle Grazie,Absent / No,70,No,No
+55_AORN A. Cardarelli,Absent / No,986,No,
+55_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,472,Yes,No
+55_PO S. Maria delle Grazie,Present / Yes,379,No,No
+56_AORN A. Cardarelli,Present / Yes,960,Yes,
+56_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,65,No,No
+56_PO S. Maria delle Grazie,Absent / No,186,No,No
+57_AORN A. Cardarelli,Present / Yes,207,No,
+57_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,214,No,No
+57_PO S. Maria delle Grazie,Absent / No,659,Yes,No
+58_AORN A. Cardarelli,Present / Yes,745,Yes,
+58_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,169,No,No
+58_PO S. Maria delle Grazie,Absent / No,671,No,No
+59_AORN A. Cardarelli,Present / Yes,405,Yes,
+59_PO S. Maria delle Grazie,Absent / No,665,Yes,No
+6_AO San Pio,Absent / No,873,No,No
+6_AORN A. Cardarelli,Absent / No,929,No,
+6_AORN Monaldi – Cotugno - C.T.O.,Absent / No,49,No,Yes
+6_AORN San Giuseppe Moscati,Absent / No,566,No,No
+6_AORN Sant’Anna e San Sebastiano,Present / Yes,503,No,
+6_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,305,No,No
+6_Ospedale del mare,Absent / No,952,No,
+6_PO Andrea Tortora di Pagani,Absent / No,173,Yes,Yes
+6_PO San Luca di Vallo della Lucania,Absent / No,173,No,No
+60_AORN A. Cardarelli,Absent / No,248,No,
+60_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,466,Yes,No
+60_PO S. Maria delle Grazie,Absent / No,659,No,No
+61_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,193,No,No
+61_PO S. Maria delle Grazie,Absent / No,229,No,No
+62_AORN A. Cardarelli,Absent / No,896,Yes,
+62_PO S. Maria delle Grazie,Present / Yes,472,No,No
+63_AORN A. Cardarelli,Absent / No,78,No,
+63_PO S. Maria delle Grazie,Absent / No,554,No,No
+64_AORN A. Cardarelli,Absent / No,68,No,
+64_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,240,Yes,Yes
+64_PO S. Maria delle Grazie,Present / Yes,235,No,No
+65_AORN A. Cardarelli,Absent / No,896,No,
+65_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,158,Yes,No
+65_PO S. Maria delle Grazie,Present / Yes,341,Yes,No
+66_AORN A. Cardarelli,Absent / No,317,No,
+66_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,154,No,No
+66_PO S. Maria delle Grazie,Absent / No,582,No,No
+67_PO S. Maria delle Grazie,Absent / No,287,No,No
+68_AORN A. Cardarelli,Absent / No,162,Yes,
+68_PO S. Maria delle Grazie,Present / Yes,47,No,No
+69_AORN A. Cardarelli,Present / Yes,472,No,
+69_PO S. Maria delle Grazie,Absent / No,713,No,No
+7_AO San Pio,Absent / No,802,No,No
+7_AORN A. Cardarelli,Absent / No,854,Yes,
+7_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,29,No,No
+7_AORN San Giuseppe Moscati,Absent / No,579,Yes,No
+7_AORN Sant’Anna e San Sebastiano,Present / Yes,353,No,No
+7_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,155,Yes,
+7_Ospedale del mare,Absent / No,49,No,
+7_PO Andrea Tortora di Pagani,Absent / No,153,No,No
+7_PO S. Maria delle Grazie,Absent / No,945,No,
+7_PO San Luca di Vallo della Lucania,Absent / No,383,No,No
+70_AORN A. Cardarelli,Present / Yes,906,Yes,
+70_PO S. Maria delle Grazie,Absent / No,589,No,No
+71_AORN A. Cardarelli,Present / Yes,168,No,
+72_AORN A. Cardarelli,Absent / No,967,No,
+73_AORN A. Cardarelli,Present / Yes,140,No,
+74_AORN A. Cardarelli,Present / Yes,645,No,
+75_AORN A. Cardarelli,Absent / No,868,Yes,
+76_AORN A. Cardarelli,Absent / No,231,No,
+77_AORN A. Cardarelli,Absent / No,957,No,
+78_AORN A. Cardarelli,Present / Yes,596,Yes,
+79_AORN A. Cardarelli,Present / Yes,307,Yes,
+8_AO San Pio,Absent / No,774,No,No
+8_AORN A. Cardarelli,Absent / No,443,No,
+8_AORN Monaldi – Cotugno - C.T.O.,Absent / No,662,Yes,
+8_AORN San Giuseppe Moscati,Absent / No,557,No,No
+8_AORN Sant’Anna e San Sebastiano,Absent / No,848,No,
+8_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,672,No,Yes
+8_Ospedale del mare,Present / Yes,379,Yes,
+8_PO Andrea Tortora di Pagani,Absent / No,191,No,No
+8_PO S. Maria delle Grazie,Absent / No,229,No,
+8_PO San Luca di Vallo della Lucania,Absent / No,154,No,Yes
+80_AORN A. Cardarelli,Present / Yes,288,Yes,
+81_AORN A. Cardarelli,Present / Yes,409,Yes,
+82_AORN A. Cardarelli,Absent / No,582,No,
+83_AORN A. Cardarelli,Present / Yes,854,Yes,
+84_AORN A. Cardarelli,Absent / No,931,Yes,
+9_AO San Pio,Present / Yes,553,No,No
+9_AORN Monaldi – Cotugno - C.T.O.,Present / Yes,412,Yes,No
+9_AORN San Giuseppe Moscati,Absent / No,540,No,
+9_AORN Sant’Anna e San Sebastiano,Absent / No,145,No,No
+9_AOU San Giovanni di Dio Ruggi di Aragona,Absent / No,161,No,No
+9_Ospedale del mare,Absent / No,84,Yes,
+9_PO Andrea Tortora di Pagani,Present / Yes,239,No,No
+9_PO S. Maria delle Grazie,Present / Yes,49,No,
+9_PO San Luca di Vallo della Lucania,Absent / No,787,No,Yes

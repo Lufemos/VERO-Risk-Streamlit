@@ -1,0 +1,67 @@
+variable,type,plotted,output
+gender,other/skip,False,
+ethnicity,other/skip,False,
+education_level,other/skip,False,
+bmi_category,other/skip,False,
+employment_status,other/skip,False,
+alcohol_consumption,other/skip,False,
+smoking_status_detail,other/skip,False,
+tumor_type,other/skip,False,
+molecular_alterations,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\molecular_alterations__event_rate.png
+mutations_present,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\mutations_present__event_rate.png
+genotipo_DPYD_type,other/skip,False,
+surgical_intervention,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\surgical_intervention__event_rate.png
+oncology_treatment_lines_n,other/skip,False,
+radiotherapy_status,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\radiotherapy_status__event_rate.png
+hypertension,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\hypertension__event_rate.png
+aortic_insufficiency,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\aortic_insufficiency__event_rate.png
+dyslipidemia,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\dyslipidemia__event_rate.png
+IPB,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\IPB__event_rate.png
+obesity_comorbidity,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\obesity_comorbidity__event_rate.png
+ischemic_heart_disease,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\ischemic_heart_disease__event_rate.png
+atrial_fibrillation,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\atrial_fibrillation__event_rate.png
+copd,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\copd__event_rate.png
+asthma,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\asthma__event_rate.png
+diabete_tipo_II,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\diabete_tipo_II__event_rate.png
+gastroesophageal_reflux_full,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\gastroesophageal_reflux_full__event_rate.png
+hypertensive_heart_disease,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\hypertensive_heart_disease__event_rate.png
+renal_insufficiency,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\renal_insufficiency__event_rate.png
+depressive_syndrome,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\depressive_syndrome__event_rate.png
+anemia_comorbidity,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\anemia_comorbidity__event_rate.png
+psychiatric_disorders,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\psychiatric_disorders__event_rate.png
+cardiovascular_disorders,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\cardiovascular_disorders__event_rate.png
+gastrointestinal_disorders,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\gastrointestinal_disorders__event_rate.png
+cerebrovascular_disorders,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\cerebrovascular_disorders__event_rate.png
+adr_description,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\adr_description__event_rate.png
+adr_n_tot,continuous,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\continuous_predictors\adr_n_tot__boxplot.png
+adr_n_grado1,continuous,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\continuous_predictors\adr_n_grado1__boxplot.png
+adr_n_grado2,continuous,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\continuous_predictors\adr_n_grado2__boxplot.png
+adr_n_grado3,other/skip,False,
+adr_n_grado4,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\adr_n_grado4__event_rate.png
+adr_n_grado5,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\adr_n_grado5__event_rate.png
+white_blood_cells_range,other/skip,False,
+red_blood_cells_range,other/skip,False,
+hemoglobin_range,other/skip,False,
+neutrophils_percent_range,other/skip,False,
+platelet_count_range,other/skip,False,
+creatinine_range,other/skip,False,
+ast_got_range,other/skip,False,
+alt_gpt_range,other/skip,False,
+total_bilirubin_range,other/skip,False,
+direct_bilirubin_range,other/skip,False,
+chemio_fine_tossicita,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\chemio_fine_tossicita__event_rate.png
+farmaci_cat_n,continuous,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\continuous_predictors\farmaci_cat_n__boxplot.png
+cci_score,other/skip,False,
+n_treatment_lines,other/skip,False,
+total_chemo_cycles,continuous,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\continuous_predictors\total_chemo_cycles__boxplot.png
+received_chemo,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\received_chemo__event_rate.png
+any_dose_reduction,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\any_dose_reduction__event_rate.png
+any_toxicity,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\any_toxicity__event_rate.png
+end_due_to_progression,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\end_due_to_progression__event_rate.png
+max_combo_regimen_size,other/skip,False,
+total_unique_active_drugs,continuous,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\continuous_predictors\total_unique_active_drugs__boxplot.png
+received_cardiotoxic_drug,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\received_cardiotoxic_drug__event_rate.png
+received_nephrotoxic_drug,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\received_nephrotoxic_drug__event_rate.png
+received_neurotoxic_drug,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\received_neurotoxic_drug__event_rate.png
+received_hematotoxic_drug,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\received_hematotoxic_drug__event_rate.png
+received_targeted_therapy,binary,True,C:\Users\HP\OneDrive\Desktop\Phase 2\plots\Death\binary_predictors\received_targeted_therapy__event_rate.png

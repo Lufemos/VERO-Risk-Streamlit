@@ -1,0 +1,20 @@
+Phase 3 PCA-then-KMeans Phenotyping Log
+--------------------------------------
+Input file: C:\Users\HP\OneDrive\Desktop\Phase 3\phase3_clustering_matrix_with_fi.csv
+Rows before dedup: 406
+Rows after  dedup: 406
+Features used: ['z_risk_death', 'z_risk_hosp', 'z_risk_adr', 'z_fi_lab']
+Standardize: True
+PCA variance retained: 0.9
+PCA components kept: 4
+KMeans k: 2
+KMeans n_init: 100
+
+PCA explained variance ratio:
+  PC1: 0.3253
+  PC2: 0.2574
+  PC3: 0.2156
+  PC4: 0.2017
+Phenotype counts:
+  0: 272 (67.00%)
+  1: 134 (33.00%)

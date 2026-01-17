@@ -1,0 +1,5 @@
+education_level,n_<= 65 years_Accelerated aging,n_<= 65 years_Decelerated aging,n_> 65 years_Accelerated aging,n_> 65 years_Decelerated aging,pct_<= 65 years_Accelerated aging,pct_<= 65 years_Decelerated aging,pct_> 65 years_Accelerated aging,pct_> 65 years_Decelerated aging
+Elementary School,8,10,4,20,12.903225806451612,21.73913043478261,10.81081081081081,28.57142857142857
+High School,25,17,19,6,40.32258064516129,36.95652173913043,51.35135135135135,8.571428571428571
+Middle School,19,12,9,33,30.64516129032258,26.08695652173913,24.324324324324326,47.14285714285714
+University Degree,10,7,5,11,16.129032258064516,15.217391304347828,13.513513513513514,15.714285714285714

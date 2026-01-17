@@ -1,0 +1,131 @@
+feature,importance,signed_coef
+white_blood_cells_range_Low (<4000 cells/µL),2.5726525770748965,2.5726525770748965
+red_blood_cells_range_<4.5 (Maschi),2.554748182417314,2.554748182417314
+creatinine_range_<0.70 (Femmine),2.4964557740919613,-2.4964557740919613
+education_level_Not Known / Missing,2.2154244179477653,-2.2154244179477653
+red_blood_cells_range_4.0-5.0 (Femmine),1.8160855832411154,-1.8160855832411154
+farmaci_cat_n,1.656198704318526,-1.656198704318526
+creatinine_range_>1.40 (Maschi),1.6502093261619033,1.6502093261619033
+education_level_High School,1.5725511696275176,1.5725511696275176
+neutrophils_percent_range_Low (<40%),1.5549831511865821,1.5549831511865821
+age_group_<= 65 years,1.4306533570773712,1.4306533570773712
+white_blood_cells_range_Normal (4000-11000 cells/µL),1.348050179230867,-1.348050179230867
+total_unique_active_drugs,1.1514315985652641,1.1514315985652641
+ast_got_range_High (>=21 U/L),1.0503309887529908,1.0503309887529908
+tumor_type_k retto,0.9772253456338873,0.9772253456338873
+hemoglobin_range_13-17 (Maschi),0.968375255413376,-0.968375255413376
+atrial_fibrillation_Present / Yes,0.9324155390702696,0.9324155390702696
+creatinine_range_0.70-1.40 (Maschi),0.9249124223903046,-0.9249124223903046
+education_level_Middle School,0.9231722896499153,0.9231722896499153
+red_blood_cells_range_4.5-5.9 (Maschi),0.9172019331470848,-0.9172019331470848
+hypertension_Present / Yes,0.9099859855110632,0.9099859855110632
+age_group_> 65 years,0.9054627231560155,-0.9054627231560155
+total_bilirubin_range_0.2.-1.0,0.7424846425632241,0.7424846425632241
+hemoglobin_range_<12 (Femmine),0.6828402626645329,0.6828402626645329
+alt_gpt_range_High (>=21 U/L),0.6616366238029109,0.6616366238029109
+copd_Present / Yes,0.660106343546265,0.660106343546265
+direct_bilirubin_range_>=0.2,0.6482737837839048,0.6482737837839048
+tumor_type_k gastrico,0.5934779739387698,0.5934779739387698
+smoking_status_detail_Current Smoker,0.5490976177711935,0.5490976177711935
+"alcohol_consumption_Yes, Moderate",0.540197969518498,-0.540197969518498
+ast_got_range_Normal (<21 U/L),0.5247175770021035,-0.5247175770021035
+smoking_status_detail_Never Smoked,0.49645230425149395,0.49645230425149395
+max_combo_regimen_size,0.4685763864578869,-0.4685763864578869
+age,0.45710829529286123,0.45710829529286123
+tumor_type_k colon,0.45123262998856145,-0.45123262998856145
+dyslipidemia_Present / Yes,0.43894918931748256,0.43894918931748256
+atrial_fibrillation_Absent / No,0.40996690000755553,-0.40996690000755553
+hypertension_Absent / No,0.38383756111303485,-0.38383756111303485
+employment_status_Retired,0.34868865713138225,-0.34868865713138225
+smoking_status_detail_Not Known / Missing,0.30670709314526245,-0.30670709314526245
+smoking_status_detail_Ex-Smoker,0.30197186320796326,-0.30197186320796326
+radiotherapy_status,0.2933897861007181,-0.2933897861007181
+alcohol_consumption_Not Known / Missing,0.2885828605683694,0.2885828605683694
+treatment_duration_days,0.27423056049764777,-0.27423056049764777
+employment_status_Worker,0.24504728351142066,0.24504728351142066
+employment_status_Not Known / Missing,0.2193934117959891,0.2193934117959891
+n_treatment_lines,0.20265787975544336,-0.20265787975544336
+oncology_treatment_lines_n,0.20265787975544336,-0.20265787975544336
+diabete_tipo_II,0.19587023678460352,-0.19587023678460352
+copd_Absent / No,0.16011964329152367,-0.16011964329152367
+alt_gpt_range_Normal (<21 U/L),0.13588228608657996,-0.13588228608657996
+creatinine_range_0.70-1.20 (Femmine),0.13565456837626746,0.13565456837626746
+neutrophils_percent_range_Normal (40-75%),0.13161559809893725,-0.13161559809893725
+direct_bilirubin_range_Normal (<0.2 mg/dL),0.12064043355191761,-0.12064043355191761
+adr_n_tot,0.09796806481697767,-0.09796806481697767
+platelet_count_range_Normal (150k-400k /µL),0.0954327991036509,-0.0954327991036509
+"alcohol_consumption_Yes, High",0.08635384799550126,0.08635384799550126
+red_blood_cells_range_<4.0 (Femmine),0.0861336454743672,0.0861336454743672
+IPB,0.08264413978658523,0.08264413978658523
+total_bilirubin_range_>1.0,0.07369799246940756,-0.07369799246940756
+hypertensive_heart_disease,0.04106573041734021,-0.04106573041734021
+genotipo_DPYD_type,0.03935538674737318,0.03935538674737318
+gastroesophageal_reflux_full,0.030097596320678453,0.030097596320678453
+cci_score,0.012570023065092379,-0.012570023065092379
+employment_status_Homemaker,0.0,0.0
+employment_status_Unemployed,0.0,0.0
+received_targeted_therapy,0.0,0.0
+surgical_intervention_Present / Yes,0.0,0.0
+surgical_intervention_Absent / No,0.0,0.0
+mutations_present_Present / Yes,0.0,0.0
+mutations_present_Absent / No,0.0,0.0
+molecular_alterations_Present / Yes,0.0,0.0
+molecular_alterations_Absent / No,0.0,0.0
+tumor_type_k vie biliari,0.0,0.0
+tumor_type_k sigma distale,0.0,0.0
+tumor_type_k pancreas,0.0,0.0
+tumor_type_k mammella,0.0,0.0
+tumor_type_k esofago,0.0,0.0
+tumor_type_k fegato,0.0,0.0
+tumor_type_k colon-retto metastatico,0.0,0.0
+tumor_type_k colon-retto,0.0,0.0
+tumor_type_k cieco,0.0,0.0
+tumor_type_k cieco - k colon DESTRO,0.0,0.0
+tumor_type_K DIGIUNO- INTESTINO TENUE,0.0,0.0
+tumor_type_K retto con secondarismi polmonari,0.0,0.0
+tumor_type_k appendice,0.0,0.0
+tumor_type_k ano,0.0,0.0
+alcohol_consumption_Non-drinker,0.0,0.0
+received_chemo,0.0,0.0
+total_chemo_cycles,0.0,0.0
+gender_Female,0.0,0.0
+education_level_Elementary School,0.0,0.0
+ethnicity_Missing / Not Noted,0.0,0.0
+ethnicity_Caucasian,0.0,0.0
+ethnicity_Asian,0.0,0.0
+gender_Male,0.0,0.0
+education_level_University Degree,0.0,0.0
+ischemic_heart_disease_Absent / No,0.0,0.0
+obesity_comorbidity_Absent / No,0.0,0.0
+white_blood_cells_range_High (>11000 cells/µL),0.0,0.0
+gastrointestinal_disorders_Present / Yes,0.0,0.0
+cardiovascular_disorders_Absent / No,0.0,0.0
+cardiovascular_disorders_Present / Yes,0.0,0.0
+gastrointestinal_disorders_Absent / No,0.0,0.0
+psychiatric_disorders_Present / Yes,0.0,0.0
+cerebrovascular_disorders_Absent / No,0.0,0.0
+cerebrovascular_disorders_Present / Yes,0.0,0.0
+depressive_syndrome_Present / Yes,0.0,0.0
+depressive_syndrome_Absent / No,0.0,0.0
+anemia_comorbidity_Present / Yes,0.0,0.0
+psychiatric_disorders_Absent / No,0.0,0.0
+anemia_comorbidity_Absent / No,0.0,0.0
+asthma_Present / Yes,0.0,0.0
+renal_insufficiency_Absent / No,0.0,0.0
+renal_insufficiency_Present / Yes,0.0,0.0
+dyslipidemia_Absent / No,0.0,0.0
+obesity_comorbidity_Present / Yes,0.0,0.0
+ischemic_heart_disease_Present / Yes,0.0,0.0
+asthma_Absent / No,0.0,0.0
+platelet_count_range_Low (<150k /µL),0.0,0.0
+hemoglobin_range_<13 (Maschi),0.0,0.0
+hemoglobin_range_12-16 (Femmine),0.0,0.0
+red_blood_cells_range_>5.9 (Maschi),0.0,0.0
+red_blood_cells_range_>5.0 (Femmine),0.0,0.0
+platelet_count_range_High (>400k /µL),0.0,0.0
+hemoglobin_range_>17 (Maschi),0.0,0.0
+neutrophils_percent_range_High (>75%),0.0,0.0
+hemoglobin_range_>16 (Femmine),0.0,0.0
+creatinine_range_>1.20 (Femmine),0.0,0.0
+creatinine_range_<0.70 (Maschi),0.0,0.0
+total_bilirubin_range_Low (<0.2 mg/dL),0.0,0.0

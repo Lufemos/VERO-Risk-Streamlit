@@ -1,0 +1,5 @@
+bmi_category,n_<= 65 years_Accelerated aging,n_<= 65 years_Decelerated aging,n_> 65 years_Accelerated aging,n_> 65 years_Decelerated aging,pct_<= 65 years_Accelerated aging,pct_<= 65 years_Decelerated aging,pct_> 65 years_Accelerated aging,pct_> 65 years_Decelerated aging
+18.5-24.9 Normal Weight,52,64,37,78,65.0,52.03252032520326,71.15384615384616,53.42465753424658
+25-29.99 Overweight,17,34,12,51,21.25,27.64227642276423,23.076923076923077,34.93150684931507
+<18.5 Underweight,7,5,2,1,8.75,4.0650406504065035,3.8461538461538463,0.684931506849315
+>=30 Obese,4,20,1,16,5.0,16.260162601626014,1.9230769230769231,10.95890410958904

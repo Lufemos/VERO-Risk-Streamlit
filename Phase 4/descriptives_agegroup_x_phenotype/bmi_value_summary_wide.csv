@@ -1,0 +1,3 @@
+age_group_clean,N_Accelerated aging,N_Decelerated aging,median_Accelerated aging,median_Decelerated aging,q1_Accelerated aging,q1_Decelerated aging,q3_Accelerated aging,q3_Decelerated aging,mean_Accelerated aging,mean_Decelerated aging,sd_Accelerated aging,sd_Decelerated aging
+<= 65 years,80.0,123.0,22.534999999999997,24.68,20.275,22.055,25.3925,27.87,23.04925,25.36439024390244,4.038725759381747,4.599695133579099
+> 65 years,52.0,146.0,23.575000000000003,24.615000000000002,21.1525,22.845,25.01,27.67,23.426923076923078,25.45109589041096,3.146381387737995,3.8676050012784438

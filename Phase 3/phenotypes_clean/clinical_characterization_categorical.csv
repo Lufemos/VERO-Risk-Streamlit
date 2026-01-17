@@ -1,0 +1,107 @@
+variable,level,Accelerated Aging (Frailty) count,Accelerated Aging (Frailty) percent,Decelerated Aging (Resilient) count,Decelerated Aging (Resilient) percent
+age_group,<= 65 years,88.0,65.7,119.0,43.8
+age_group,> 65 years,46.0,34.3,153.0,56.2
+alcohol_consumption,Non-drinker,63.0,47.0,101.0,37.1
+alcohol_consumption,Not Known / Missing,39.0,29.1,95.0,34.9
+alcohol_consumption,"Yes, High",2.0,1.5,,
+alcohol_consumption,"Yes, Moderate",30.0,22.4,76.0,27.9
+alt_gpt_range,High (>=21 U/L),64.0,47.8,69.0,25.4
+alt_gpt_range,Normal (<21 U/L),70.0,52.2,203.0,74.6
+anemia_comorbidity,Absent / No,134.0,100.0,261.0,96.0
+anemia_comorbidity,Present / Yes,,,11.0,4.0
+aortic_insufficiency,Absent / No,133.0,99.3,271.0,99.6
+aortic_insufficiency,Present / Yes,1.0,0.7,1.0,0.4
+ast_got_range,High (>=21 U/L),71.0,53.0,86.0,31.6
+ast_got_range,Normal (<21 U/L),63.0,47.0,186.0,68.4
+asthma,Absent / No,134.0,100.0,269.0,98.9
+asthma,Present / Yes,,,3.0,1.1
+atrial_fibrillation,Absent / No,131.0,97.8,265.0,97.4
+atrial_fibrillation,Present / Yes,3.0,2.2,7.0,2.6
+bmi_category,18.5-24.9 Normal Weight,92.0,68.7,144.0,52.9
+bmi_category,25-29.99 Overweight,28.0,20.9,86.0,31.6
+bmi_category,<18.5 Underweight,9.0,6.7,6.0,2.2
+bmi_category,>=30 Obese,5.0,3.7,36.0,13.2
+cardiovascular_disorders,Absent / No,131.0,97.8,257.0,94.5
+cardiovascular_disorders,Present / Yes,3.0,2.2,15.0,5.5
+cerebrovascular_disorders,Absent / No,133.0,99.3,269.0,98.9
+cerebrovascular_disorders,Present / Yes,1.0,0.7,3.0,1.1
+copd,Absent / No,127.0,94.8,254.0,93.4
+copd,Present / Yes,7.0,5.2,18.0,6.6
+creatinine_range,0.70-1.20 (Femmine),23.0,17.2,45.0,16.5
+creatinine_range,0.70-1.40 (Maschi),75.0,56.0,174.0,64.0
+creatinine_range,<0.70 (Femmine),9.0,6.7,31.0,11.4
+creatinine_range,<0.70 (Maschi),18.0,13.4,17.0,6.2
+creatinine_range,>1.20 (Femmine),2.0,1.5,2.0,0.7
+creatinine_range,>1.40 (Maschi),7.0,5.2,3.0,1.1
+depressive_syndrome,Absent / No,132.0,98.5,265.0,97.4
+depressive_syndrome,Present / Yes,2.0,1.5,7.0,2.6
+direct_bilirubin_range,>=0.2,96.0,71.6,188.0,69.1
+direct_bilirubin_range,Normal (<0.2 mg/dL),38.0,28.4,84.0,30.9
+dyslipidemia,Absent / No,121.0,90.3,244.0,89.7
+dyslipidemia,Present / Yes,13.0,9.7,28.0,10.3
+education_level,Elementary School,11.0,8.2,31.0,11.4
+education_level,High School,41.0,30.6,26.0,9.6
+education_level,Middle School,27.0,20.1,46.0,16.9
+education_level,Not Known / Missing,41.0,30.6,150.0,55.1
+education_level,University Degree,14.0,10.4,19.0,7.0
+employment_status,Homemaker,8.0,6.0,18.0,6.6
+employment_status,Not Known / Missing,33.0,24.6,84.0,30.9
+employment_status,Retired,33.0,24.6,85.0,31.2
+employment_status,Unemployed,6.0,4.5,12.0,4.4
+employment_status,Worker,54.0,40.3,73.0,26.8
+end_reason_other_any_line,Absent / No,73.0,54.5,160.0,58.8
+end_reason_other_any_line,Present / Yes,61.0,45.5,112.0,41.2
+end_reason_progression_any_line,Absent / No,101.0,75.4,226.0,83.1
+end_reason_progression_any_line,Present / Yes,33.0,24.6,46.0,16.9
+ethnicity,African or African American,1.0,0.7,1.0,0.4
+ethnicity,Asian,,,1.0,0.4
+ethnicity,Caucasian,133.0,99.3,269.0,98.9
+ethnicity,Missing / Not Noted,,,1.0,0.4
+gastrointestinal_disorders,Absent / No,128.0,95.5,260.0,95.6
+gastrointestinal_disorders,Present / Yes,6.0,4.5,12.0,4.4
+gender,Female,45.0,33.6,101.0,37.1
+gender,Male,89.0,66.4,171.0,62.9
+hemoglobin_range,12-16 (Femmine),13.0,9.7,55.0,20.2
+hemoglobin_range,13-17 (Maschi),20.0,14.9,81.0,29.8
+hemoglobin_range,<12 (Femmine),22.0,16.4,27.0,9.9
+hemoglobin_range,<13 (Maschi),75.0,56.0,107.0,39.3
+hemoglobin_range,>16 (Femmine),2.0,1.5,1.0,0.4
+hemoglobin_range,>17 (Maschi),2.0,1.5,1.0,0.4
+hypertension,Absent / No,92.0,68.7,179.0,65.8
+hypertension,Present / Yes,42.0,31.3,93.0,34.2
+ischemic_heart_disease,Absent / No,128.0,95.5,251.0,92.3
+ischemic_heart_disease,Present / Yes,6.0,4.5,21.0,7.7
+molecular_alterations,Absent / No,94.0,70.1,191.0,70.2
+molecular_alterations,Present / Yes,40.0,29.9,81.0,29.8
+mutations_present,Absent / No,114.0,85.1,223.0,82.0
+mutations_present,Present / Yes,20.0,14.9,49.0,18.0
+neutrophils_percent_range,High (>75%),19.0,14.2,19.0,7.0
+neutrophils_percent_range,Low (<40%),11.0,8.2,3.0,1.1
+neutrophils_percent_range,Normal (40-75%),104.0,77.6,250.0,91.9
+obesity_comorbidity,Absent / No,131.0,97.8,266.0,97.8
+obesity_comorbidity,Present / Yes,3.0,2.2,6.0,2.2
+platelet_count_range,High (>400k /µL),14.0,10.4,9.0,3.3
+platelet_count_range,Low (<150k /µL),13.0,9.7,12.0,4.4
+platelet_count_range,Normal (150k-400k /µL),107.0,79.9,251.0,92.3
+psychiatric_disorders,Absent / No,134.0,100.0,271.0,99.6
+psychiatric_disorders,Present / Yes,,,1.0,0.4
+red_blood_cells_range,4.0-5.0 (Femmine),15.0,11.2,67.0,24.6
+red_blood_cells_range,4.5-5.9 (Maschi),36.0,26.9,154.0,56.6
+red_blood_cells_range,<4.0 (Femmine),16.0,11.9,12.0,4.4
+red_blood_cells_range,<4.5 (Maschi),63.0,47.0,34.0,12.5
+red_blood_cells_range,>5.0 (Femmine),4.0,3.0,3.0,1.1
+red_blood_cells_range,>5.9 (Maschi),,,2.0,0.7
+renal_insufficiency,Absent / No,134.0,100.0,267.0,98.2
+renal_insufficiency,Present / Yes,,,5.0,1.8
+smoking_status_detail,Current Smoker,20.0,14.9,19.0,7.0
+smoking_status_detail,Ex-Smoker,45.0,33.6,83.0,30.5
+smoking_status_detail,Never Smoked,38.0,28.4,65.0,23.9
+smoking_status_detail,Not Known / Missing,31.0,23.1,105.0,38.6
+surgical_intervention,Absent / No,66.0,49.3,127.0,46.7
+surgical_intervention,Present / Yes,68.0,50.7,145.0,53.3
+total_bilirubin_range,0.2.-1.0,119.0,88.8,240.0,88.2
+total_bilirubin_range,>1.0,12.0,9.0,14.0,5.1
+total_bilirubin_range,Low (<0.2 mg/dL),3.0,2.2,18.0,6.6
+white_blood_cells_range,High (>11000 cells/µL),17.0,12.7,13.0,4.8
+white_blood_cells_range,Low (<4000 cells/µL),24.0,17.9,4.0,1.5
+white_blood_cells_range,Normal (4000-11000 cells/µL),93.0,69.4,255.0,93.8
